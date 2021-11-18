@@ -7,13 +7,9 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false 
     },
 	  boundary: {
-			type: DataTypes.GEOMETRY,
+			type: DataTypes.GEOMETRY('POLYGON'),
 			allowNull: false
 		},
-		coords: {
-			type: DataTypes.GEOMETRY,
-			allowNull: false
-		}
   },{timestamps:false});
 
 	return forbiddenArea;

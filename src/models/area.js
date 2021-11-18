@@ -7,18 +7,14 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false 
     },
     boundary: { 
-				type: DataTypes.GEOMETRY,
+				type: DataTypes.GEOMETRY('POLYGON'),
 				allowNull: false
 		},
 		center: {
-				type: DataTypes.GEOMETRY,
+				type: DataTypes.GEOMETRY('POINT'),
 				allowNull: false
 		},
-		coords: {
-				type: DataTypes.GEOMETRY,
-				allowNull: false
-		},
-		piceBase: {
+		priceBase: {
 				type: DataTypes.INTEGER,
 				allowNull: false
 		},
