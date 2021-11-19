@@ -11,11 +11,11 @@ class DiscountChain extends CostChainBase{
     return isParkingZone ? true : false
   }
 
-	calculateCost(data) {    
+	async calculateCost(data) {    
     if(this.isInParkingZone(data.endPoint)) {
       data.finalCost = data.finalCost * 0.7
     } 
-		return this.goToNextChain(data);
+		return await this.goToNextChain(data);
 	}
 }
 
