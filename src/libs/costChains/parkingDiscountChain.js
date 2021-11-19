@@ -9,7 +9,7 @@ class ParkingDiscountChain extends CostChainBase{
   async isInParkingZone(endPoint) {
     try {
       const isParkingZone = await historyService.isInParkingZone(JSON.stringify(endPoint).replace('"','\"'));
-      return isParkingZone ? true : false
+      return isParkingZone.value
     } catch(err) {
       throw err;
     }
