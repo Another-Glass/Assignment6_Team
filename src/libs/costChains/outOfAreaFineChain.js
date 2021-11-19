@@ -1,7 +1,7 @@
 const CostChainBase = require('./costChainBase')
 const historyService = require('../../services/historyService');
 
-class outOfAreaFineChain extends  CostChainBase{
+class OutOfAreaFineChain extends  CostChainBase{
 	constructor(nextChain){
 		super(nextChain)
 	}
@@ -26,4 +26,4 @@ class outOfAreaFineChain extends  CostChainBase{
 	}
 }
 
-module.exports.outOfAreaFineChain = outOfAreaFineChain;
+module.exports.OutOfAreaFineChain = OutOfAreaFineChain;
