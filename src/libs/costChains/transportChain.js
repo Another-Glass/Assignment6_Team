@@ -7,9 +7,9 @@ class TransportChain extends CostChainBase {
     super(nextChain);
   }
 
-  async isInTransportTime(userId) {
+  async isInTransportTime(userId, historyId) {
     try {
-      const isInTransport = await historyService.isTransport(userId);
+      const isInTransport = await historyService.isTransport(userId, historyId);
 
       return isInTransport.value;
     } catch (err) {
@@ -19,10 +19,8 @@ class TransportChain extends CostChainBase {
 
   async calculateCost(data) {
     try {
-      if (await this.isInTransportTime(data.userId)) {
-        const { priceBase, pricePerMinute } = await areaService.getAreaPrice(
-          data.deerAreaId,
-        );
+      if (await this.isInTransportTime(data.userId, data.historyId)) {
+        const { priceBase } = await areaService.getAreaPrice(data.deerAreaId);
 
         data.finalCost -= priceBase;
       }

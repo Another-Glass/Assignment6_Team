@@ -22,7 +22,7 @@ class FreeChain extends CostChainBase {
         data.finalCost = 0;
       }
 
-      return await this.goToNextChain(data);
+      return data.finalCost;
     } catch (err) {
       throw err;
     }
