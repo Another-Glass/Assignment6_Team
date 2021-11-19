@@ -7,15 +7,23 @@ class DiscountChain extends CostChainBase{
 	}
 	
   async isInParkingZone(endPoint) {
-    const isParkingZone = await historyService.isInParkingZone(endPoint);
-    return isParkingZone ? true : false
+    try {
+      const isParkingZone = await historyService.isInParkingZone(endPoint);
+      return isParkingZone ? true : false
+    } catch(err) {
+      throw err;
+    }
   }
 
-	calculateCost(data) {    
-    if(this.isInParkingZone(data.endPoint)) {
-      data.finalCost = data.finalCost * 0.7
-    } 
-		return this.goToNextChain(data);
+	async calculateCost(data) {    
+    try {
+      if(this.isInParkingZone(data.endPoint)) {
+        data.finalCost = data.finalCost * 0.7
+      } 
+      return await this.goToNextChain(data);
+    } catch(err) {
+      throw err;
+    }  
 	}
 }
 
