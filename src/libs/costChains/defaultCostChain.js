@@ -31,4 +31,5 @@ class DefaultCostChain extends CostChainBase {
   }
 }
 
+
 module.exports.DefaultCostChain = DefaultCostChain;
