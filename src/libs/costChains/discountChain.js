@@ -20,3 +20,4 @@ class DiscountChain extends CostChainBase{
 }
 
 module.exports.DiscountChain = DiscountChain;
+
