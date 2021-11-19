@@ -9,7 +9,7 @@ class ForbiddenAreaFineChain extends CostChainBase{
   async isInForbidden(endPoint) {
 		try {
 			const isForbidden = await historyService.isInForbidden(JSON.stringify(endPoint).replace('"','\"'));
-    	return isForbidden ? true : false
+    	return isForbidden.value
 		} catch(err) {
 			throw err;
 		}
