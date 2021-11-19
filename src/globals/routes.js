@@ -8,7 +8,7 @@ const USER_SIGNUP = '/user';
 const USER_SIGNIN = '/token';
 
 const HISTORY = '/histories';
-const HISTORY_DETAIL = '/historyId';
+const HISTORY_DETAIL = '/:historyId';
 
 const COST = '/cost';
 
