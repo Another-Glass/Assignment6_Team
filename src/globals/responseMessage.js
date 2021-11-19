@@ -15,7 +15,7 @@ module.exports = {
   // finalCost
   FINALCOST_SUCCESS: '이용요금 조회 성공',
 
-  // inquiry
+  // listing
   USERLIST_SUCCESS: '모든 유저 조회 성공',
   HISTORYLIST_SUCCESS: '모든 이용내역 조회 성공',
   DEERLIST_SUCCESS: '모든 킥보드 조회 성공',
