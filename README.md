@@ -58,7 +58,7 @@
 | **blog**: [Makkiato](https://makkiato.tistory.com) </br> **github**: [Makkiato](https://github.com/Makkiato) | **blog**: [gusrlf14](https://velog.io/@gusrlf14) </br> **github**: [hyunghilkim](https://github.com/hyunghilkim) | **blog**: [dongjay00.log](https://velog.io/@dongjay00) </br> **github**: [dongjay00](https://github.com/dongjay00) |
 | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) |
 |                    테스트 데이터 세팅, DB 쿼리              |                             변동요금 조건 연산                    |                              변동요금 조건 연산            |
-|                      [프로젝트 회고](https://makkiato.tistory.com/10)                       |                      [프로젝트 회고](https://velog.io/@gusrlf14/%EC%9B%90%ED%8B%B0%EB%93%9C-%EC%9C%84%EC%BD%94%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-4%ED%9A%8C%EC%B0%A8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0)                       | [프로젝트 회고](https://velog.io/@dongjay00/%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%84%A4%EB%B2%88%EC%A7%B8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0) |
+|                      [프로젝트 회고](https://makkiato.tistory.com/10)                       |                      [프로젝트 회고](https://velog.io/@gusrlf14/%EC%9B%90%ED%8B%B0%EB%93%9C-%EC%9C%84%EC%BD%94%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-6%ED%9A%8C%EC%B0%A8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0)                       | [프로젝트 회고](https://velog.io/@dongjay00/%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%97%AC%EC%84%AF%EB%B2%88%EC%A7%B8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0) |
 
 
 </div>
@@ -128,7 +128,7 @@
 
 </br>
 
-![8퍼센트ERD](https://user-images.githubusercontent.com/38933716/142597056-cf4c44f1-a923-46e4-be5c-88506f96fad2.png)
+![디어ERD](https://user-images.githubusercontent.com/38933716/142597056-cf4c44f1-a923-46e4-be5c-88506f96fad2.png)
 
 </br>
 </br>
