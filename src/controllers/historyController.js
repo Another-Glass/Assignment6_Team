@@ -5,7 +5,6 @@ const { ValidationError, EntityNotExistError, InternalServerError } = require('.
 const historyService = require('../services/historyService');
 const costCalculator = require('../libs/costChains');
 
-
 //이용요금 계산
 exports.getFinalCost = async (req, res, next) => {
 	try {
@@ -15,6 +14,7 @@ exports.getFinalCost = async (req, res, next) => {
 			throw new ValidationError();
 
 		const isHistory = await historyService.readHistory(historyId);
+
 		if (!isHistory)
 			throw new EntityNotExistError();
 		

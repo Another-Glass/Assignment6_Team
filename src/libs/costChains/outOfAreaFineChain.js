@@ -6,9 +6,10 @@ class OutOfAreaFineChain extends  CostChainBase{
 		super(nextChain)
 	}
 	
-  async isInAllowedArea(areaId, point) {
+  async isInAllowedArea(deerAreaId, point) {
 		try {
-			return await historyService.isInAllowedArea(areaId, point); 
+			
+			return await historyService.isInAllowedArea(deerAreaId, JSON.stringify(point).replace('"','\"')); 
 		} catch (err) {
 			throw err;
 		}   
@@ -16,8 +17,10 @@ class OutOfAreaFineChain extends  CostChainBase{
 
 	async calculateCost(data){
 		try {
-			if(!this.isInAllowedArea(data.areaId, data.endPoint).value) {
-				data.finalCost = data.finalCost + this.isInAllowedArea(data.areaId, data.endPoint).distance * 100;        
+			const isAllowedArea = await this.isInAllowedArea(data.deerAreaId, data.endPoint)
+
+			if(!isAllowedArea.value) {
+				data.finalCost = data.finalCost + isAllowedArea.distance * 100;        
 			}
 			return await this.goToNextChain(data);
 		} catch(err) {

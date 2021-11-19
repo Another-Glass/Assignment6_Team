@@ -13,5 +13,13 @@ module.exports = {
   NO_PAGE_ERROR: "해당 라우트는 존재하지 않습니다.",
 
   // finalCost
-  FINALCOST_SUCCESS: '이용요금 조회 성공'
+  FINALCOST_SUCCESS: '이용요금 조회 성공',
+
+  // listing
+  USERLIST_SUCCESS: '모든 유저 조회 성공',
+  HISTORYLIST_SUCCESS: '모든 이용내역 조회 성공',
+  DEERLIST_SUCCESS: '모든 킥보드 조회 성공',
+  AREALIST_SUCCESS: '모든 지역 조회 성공',
+  PARKINGZONELIST_SUCCESS: '모든 파킹존 조회 성공',
+  FORBIDDENAREALIST_SUCCESS: '모든 반납금지구역 조회 성공',
 };
