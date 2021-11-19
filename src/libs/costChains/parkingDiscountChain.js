@@ -20,7 +20,7 @@ class ParkingDiscountChain extends CostChainBase{
 	async calculateCost(data) {    
     try {
       if (await this.isInParkingZone(data.endPoint)) {
-        data.finalCost = data.finalCost - (data.baseCost * process.env.PARKINGZONE_RATE_DISCOUNT)
+        data.finalCost = data.finalCost - (data.baseCost * Number(process.env.PARKINGZONE_RATE_DISCOUNT))
       }       
       return await this.goToNextChain(data);
     } catch(err) {
