@@ -20,7 +20,6 @@ logger.log('chains : '+chains);
 
 let costCalculator = new CostCalculator();
 costCalculator.addChain(new chains['defaultCostChain'].DefaultCostChain);
-costCalculator.addChain(new chains['defaultCostChain'].DefaultCostChain);
 
 module.exports = costCalculator;
 

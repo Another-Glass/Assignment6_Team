@@ -1,22 +1,30 @@
 const CostChainBase = require('./costChainBase')
 const historyService = require('../../services/historyService');
 
-class forbiddenAreaFineChain extends CostChainBase{
+class ForbiddenAreaFineChain extends CostChainBase{
 	constructor(nextChain){
 		super(nextChain)
 	}
 	
   async isInForbidden(endPoint) {
-    const isForbidden = await historyService.isInForbidden(endPoint);
-    return isForbidden ? true : false
+		try {
+			const isForbidden = await historyService.isInForbidden(endPoint);
+    	return isForbidden ? true : false
+		} catch(err) {
+			throw err;
+		}
   }
 
 	async calculateCost(data) { 
-		if(this.isInForbidden(data.endPoint)) {
-      data.finalCost = data.finalCost + 6000;
-    }
-		return await this.goToNextChain(data);
+		try {
+			if(this.isInForbidden(data.endPoint)) {
+				data.finalCost = data.finalCost + 6000;
+			}
+			return await this.goToNextChain(data);
+		} catch(err) {
+			throw err;
+		}
 	}
 }
 
-module.exports.forbiddenAreaFineChain = forbiddenAreaFineChain;
+module.exports.ForbiddenAreaFineChain = ForbiddenAreaFineChain;
