@@ -10,7 +10,6 @@ const { statusCode, routes, responseMessage } = require('./globals');
 
 const globalRouter = require('./routes/globalRouter');
 const historyRouter = require('./routes/historyRouter');
-const listingRouter = require('./routes/listingRouter');
 
 const { NoPageError } = require('./utils/errors/commonError');
 
@@ -37,7 +36,6 @@ app.use(cookieParser());
 //라우터 설정
 app.use(routes.root, globalRouter);
 app.use(routes.history, historyRouter);
-app.use(routes.listing, listingRouter);
 
 // 아래는 에러 핸들링 함수들
 app.use(function (req, res, next) {
