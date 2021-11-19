@@ -22,6 +22,8 @@ const app = express();
 // app.engine('html', require('ejs').renderFile);
 // app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 //미들웨어 설정
 app.use(helmet({
   contentSecurityPolicy: false

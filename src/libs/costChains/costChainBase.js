@@ -1,16 +1,18 @@
+const logger = require("../../utils/logger");
+
 //체인의 베이스 클래스. 단독사용금지
 class CostChainBase {
 	constructor(chain){
 		this._nextChain= chain
 	}
 	
-	calculateCost(data){
-		return goToNextChain(data);
+	async calculateCost(data){
+		return await goToNextChain(data);
 	}
 
-	goToNextChain(data){
-		if(nextChain !== undefined)
-			return nextChain.calculateCost(data)
+	async goToNextChain(data){
+		if(this._nextChain !== undefined)
+			return await this._nextChain.calculateCost(data)
 		else
 			return data.finalCost
 	}

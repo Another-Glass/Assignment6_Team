@@ -3,6 +3,8 @@ const { resFormatter } = require('../utils');
 const logger = require('../utils/logger');
 const { ValidationError } = require('../utils/errors/commonError');
 const historyService = require('../services/historyService')
+const costCalculator = require('../libs/costChains')
+
 //이용요금 계산
 exports.getFinalCost = async (req, res, next) => {
 	try {
