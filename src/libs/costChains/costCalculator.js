@@ -16,4 +16,4 @@ class CostCalculator {
 	}
 }
 
-module.expots = CostCalculator;
+module.exports = CostCalculator;
