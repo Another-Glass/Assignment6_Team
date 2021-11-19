@@ -39,7 +39,7 @@ exports.getHistoryTimes = async historyId => {
  * @param {사용자 아이디} userId 
  * @return {value : 30분 이내 재사용 여부}
  */ 
-exports.isTransport = async (userId) => {
+exports.isTransport = async (userId,historyId) => {
   const query = `
   SELECT 
 	  HOUR(time_gap.diff) = 0 AND MINUTE(time_gap.diff) < 31
@@ -52,12 +52,12 @@ exports.isTransport = async (userId) => {
         (
           SELECT startTime 
           FROM histories 
-          WHERE id = (SELECT id FROM (SELECT id, startTime, endTime FROM histories WHERE userId = :userId) user_only ORDER BY startTime DESC LIMIT 1)
+          WHERE id = (SELECT id FROM (SELECT id, startTime, endTime FROM histories WHERE userId = :userId) user_only WHERE id = :historyId)
         ), 
         (
           SELECT endTime 
           FROM histories 
-          WHERE id = (SELECT id FROM (SELECT id, startTime, endTime FROM histories WHERE userId = :userId) user_only ORDER BY startTime DESC LIMIT 1 OFFSET 1)
+          WHERE id = (SELECT id FROM (SELECT id, startTime, endTime FROM histories WHERE userId = :userId) user_only WHERE id < :historyId ORDER BY startTime DESC LIMIT 1)
         )
       ) AS diff	 
   ) time_gap    
@@ -66,6 +66,7 @@ exports.isTransport = async (userId) => {
     let result = await models.sequelize.query(query, {
       replacements: {
         userId: userId,
+        historyId: historyId
       },
       type: models.sequelize.QueryTypes.SELECT,
     });
@@ -146,6 +147,7 @@ exports.isInForbidden = async (geoJSON)=>{
     throw err
   }
 }
+
 /** 
  * 활동구역 내 반납 확인
  * @param {검사할 좌표의 geoJSON String} geoJSON
