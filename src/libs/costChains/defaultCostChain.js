@@ -21,16 +21,16 @@ class DefaultCostChain extends CostChainBase {
 
   async calculateCost(data) {
     try {
-      const { startTime, endTime, ...rest1 } =
+      const { startTime, endTime } =
         await defaultCostService.getLatestHistoryOfUser(data.historyId);
-      const { priceBase, pricePerMinute, ...rest2 } =
+      const { priceBase, pricePerMinute } =
         await defaultCostService.getAreaPrice(data.deerAreaId);
 
       const rideMinutes = this.calculateMinute(startTime, endTime);
       const defaultCost = priceBase + pricePerMinute * rideMinutes;
 
-      data.baseCost = defaultCost;
-      data.finalCost = defaultCost;
+      data.baseCost = data.baseCost + defaultCost;
+      data.finalCost = data.finalCost + defaultCost;
 
       return await this.goToNextChain(data);
     } catch (err) {
