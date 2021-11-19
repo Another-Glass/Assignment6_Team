@@ -7,17 +7,30 @@ const ROOT = '/';
 const USER_SIGNUP = '/user';
 const USER_SIGNIN = '/token';
 
+// history
 const HISTORY = '/histories';
 const HISTORY_DETAIL = '/:historyId';
-
 const COST = '/cost';
 
+// inquiry
+const INQUIRY = '/inquiry';
+const USER = '/users';
+const DEER = '/deers';
+const AREA = '/areas';
+const PARKING_ZONE = '/parkingzones';
+const FORBIDDEN_AREA = '/forbiddenareas';
 
 const routes = {
   root: ROOT,
   history:HISTORY,
   historyDetail:HISTORY_DETAIL,
-  cost:COST
+  cost:COST,
+  inquiry:INQUIRY,
+  user:USER,
+  deer:DEER,
+  area:AREA,
+  parkingZone:PARKING_ZONE,
+  forbiddenArea:FORBIDDEN_AREA,
 }
 
 module.exports = routes;
