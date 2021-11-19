@@ -20,9 +20,3 @@ class forbiddenAreaFineChain extends CostChainBase{
 }
 
 module.exports.forbiddenAreaFineChain = forbiddenAreaFineChain;
-
-/*
-
-반납금지 여부를 확인하여 반납금지 구역으로 확인되면
-
-기본요금에 6000원 벌금 부과 */
