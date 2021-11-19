@@ -11,6 +11,8 @@ class CostChainBase {
 	}
 
 	async goToNextChain(data){
+		logger.logWithTag('chaining...finalCost is : '+data.finalCost, 'src:costChain')
+		
 		if(this._nextChain !== undefined)
 			return await this._nextChain.calculateCost(data)
 		else

@@ -13,13 +13,13 @@ exports.getFinalCost = async (req, res, next) => {
 
 		if (!historyId || isNaN(historyId) || historyId.includes(' '))
 			throw new ValidationError();
-		// const isHistory = await getLatestHistoryOfUser(historyId);
 
-		// if (!isHistory)
-		// 	throw new EntityNotExistError();
+		const isHistory = await historyService.readHistory(historyId);
+
+		if (!isHistory)
+			throw new EntityNotExistError();
 		
-		// const finalCost = await costCalculator.calculateCost(historyId);
-		const finalCost = 1000;
+		const finalCost = await costCalculator.calculateCost(historyId);
 
 		if (finalCost < 0)
 			throw new InternalServerError();
