@@ -1,7 +1,7 @@
 const CostChainBase = require('./costChainBase')
 const historyService = require('../../services/historyService');
 
-class DiscountChain extends CostChainBase{
+class ParkingDiscountChain extends CostChainBase{
 	constructor(nextChain){
 		super(nextChain)
 	}
@@ -17,9 +17,10 @@ class DiscountChain extends CostChainBase{
 
 	async calculateCost(data) {    
     try {
-      if(this.isInParkingZone(data.endPoint)) {
+      if (await this.isInParkingZone(data.endPoint)) {
         data.finalCost = data.finalCost * 0.7
-      } 
+      }       
+      
       return await this.goToNextChain(data);
     } catch(err) {
       throw err;
@@ -27,5 +28,5 @@ class DiscountChain extends CostChainBase{
 	}
 }
 
-module.exports.DiscountChain = DiscountChain;
+module.exports.ParkingDiscountChain = ParkingDiscountChain;
 

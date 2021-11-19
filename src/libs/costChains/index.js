@@ -23,10 +23,8 @@ logger.logWithTag('Chains : \n'+JSON.stringify(chains), 'src:costChain')
 //체인 생성 및 연결
 let costCalculator = new CostCalculator();
 costCalculator.addChain(new chains['defaultCostChain'].DefaultCostChain);
-
+costCalculator.addChain(new chains['parkingDiscountChain'].ParkingDiscountChain);
+costCalculator.addChain(new chains['outOfAreaFineChain'].OutOfAreaFineChain);
+costCalculator.addChain(new chains['forbiddenAreaFineChain'].ForbiddenAreaFineChain);
 
 module.exports = costCalculator;
-
-//사용 예
-//const costCalculator = require('../libs/costChains')
-//let finalCost = await costCalulator.calculateCost(data);
