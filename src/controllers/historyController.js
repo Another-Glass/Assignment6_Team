@@ -11,11 +11,10 @@ exports.getFinalCost = async (req, res, next) => {
 	try {
 		const historyId = req.params.historyId;
 
-		if (!historyId || isNaN(historyId) || historyId.includes(' '))
+		if (!historyId || isNaN(historyId))
 			throw new ValidationError();
 
 		const isHistory = await historyService.readHistory(historyId);
-
 		if (!isHistory)
 			throw new EntityNotExistError();
 		
@@ -26,7 +25,7 @@ exports.getFinalCost = async (req, res, next) => {
 
 		return res
 			.status(statusCode.OK)
-			.send(resFormatter.success(responseMessage.FINALCOST_SUCCESS, finalCost));
+			.send(resFormatter.success(responseMessage.FINALCOST_SUCCESS, {cost:finalCost}));
 	} catch (err) {
 		next(err);
 	}

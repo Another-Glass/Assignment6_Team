@@ -1,11 +1,13 @@
-//모듈 importer index파일
+//체인 설정파일
 const path = require('path');
 const fs = require('fs');
 const basename = path.basename(__filename);
+const chainFolderPath = __dirname+'/chains';
+
 const CostCalculator = require('./costCalculator');
 const logger = require('../../utils/logger');
 
-
+//체인 모듈들을 자동 import
 chains = {};
 fs
   .readdirSync(__dirname)
@@ -15,28 +17,16 @@ fs
   .forEach(file => {
     chains[file.replace('.js', '')] = require(path.join(__dirname, file));
   });
-logger.log('chains : '+chains);
+logger.logWithTag('Chains : \n'+JSON.stringify(chains), 'src:costChain')
 
 
+//체인 생성 및 연결
 let costCalculator = new CostCalculator();
 costCalculator.addChain(new chains['defaultCostChain'].DefaultCostChain);
 
-module.exports = costCalculator;
 
-//체인에 전달될 데이터
-// data = {
-// 	historyId:,
-// 	userId:,
-// 	useDeerName:,
-// 	deerAreaId:, //킥보드 소유한 지역id
-// 	baseCost:, //- 최초엔 0, defaultCostChains을 거치면 기본값 들어옴 (할인안된 최초 기본+시간당요금)
-// 	finalCost:,
-// 	startPoint:,  ///mysql의 ST_AsGeoJSON함수를 살펴볼것. 그 값 그대로 넣을예정
-// 	endPoint:,
-// 	startTime:,
-// 	endTime:,
-// }
+module.exports = costCalculator;
 
 //사용 예
 //const costCalculator = require('../libs/costChains')
-//let finalCost = costCalulator.calculateCost(data);
+//let finalCost = await costCalulator.calculateCost(data);
