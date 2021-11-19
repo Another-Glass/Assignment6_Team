@@ -20,7 +20,7 @@ class ForbiddenAreaFineChain extends CostChainBase{
 	async calculateCost(data) { 
 		try {
 			if(await this.isInForbidden(data.endPoint)) {
-				data.finalCost = data.finalCost + process.env.FORBIDDEN_AREA_FINE;
+				data.finalCost = data.finalCost + Number(process.env.FORBIDDEN_AREA_FINE);
 			}
 			return await this.goToNextChain(data);
 		} catch(err) {

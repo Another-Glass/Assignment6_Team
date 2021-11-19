@@ -20,8 +20,9 @@ class OutOfAreaFineChain extends  CostChainBase{
 	async calculateCost(data){
 		try {
 			const isAllowedArea = await this.isInAllowedArea(data.deerAreaId, data.endPoint)
+			
 			if(!isAllowedArea.value) {
-				data.finalCost = data.finalCost + (isAllowedArea.distance * process.env.FINE_PER_METER);        
+				data.finalCost = data.finalCost + (isAllowedArea.distance * Number(process.env.FINE_PER_METER));        
 			}
 			return await this.goToNextChain(data);
 		} catch(err) {

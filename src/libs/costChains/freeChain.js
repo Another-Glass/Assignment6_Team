@@ -20,9 +20,9 @@ class FreeChain extends CostChainBase {
     try {
       if (await this.isInOneMinute(data.historyId)) {
         data.finalCost = 0;
+        return data.finalCost;
       }
-
-      return data.finalCost;
+      return await this.goToNextChain(data);
     } catch (err) {
       throw err;
     }
