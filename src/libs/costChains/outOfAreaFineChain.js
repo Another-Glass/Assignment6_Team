@@ -1,5 +1,7 @@
 const CostChainBase = require('./costChainBase')
 const historyService = require('../../services/historyService');
+const dotenv = require('dotenv');
+dotenv.config();
 
 class OutOfAreaFineChain extends  CostChainBase{
 	constructor(nextChain){
@@ -18,9 +20,8 @@ class OutOfAreaFineChain extends  CostChainBase{
 	async calculateCost(data){
 		try {
 			const isAllowedArea = await this.isInAllowedArea(data.deerAreaId, data.endPoint)
-
 			if(!isAllowedArea.value) {
-				data.finalCost = data.finalCost + isAllowedArea.distance * 100;        
+				data.finalCost = data.finalCost + (isAllowedArea.distance * process.env.FINE_PER_METER);        
 			}
 			return await this.goToNextChain(data);
 		} catch(err) {

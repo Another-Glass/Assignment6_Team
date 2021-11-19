@@ -1,5 +1,7 @@
 const CostChainBase = require('./costChainBase')
 const historyService = require('../../services/historyService');
+const dotenv = require('dotenv');
+dotenv.config();
 
 class ParkingDiscountChain extends CostChainBase{
 	constructor(nextChain){
@@ -18,9 +20,8 @@ class ParkingDiscountChain extends CostChainBase{
 	async calculateCost(data) {    
     try {
       if (await this.isInParkingZone(data.endPoint)) {
-        data.finalCost = data.finalCost * 0.7
+        data.finalCost = data.finalCost - (data.baseCost * process.env.PARKINGZONE_RATE_DISCOUNT)
       }       
-      
       return await this.goToNextChain(data);
     } catch(err) {
       throw err;
