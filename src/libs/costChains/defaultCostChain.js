@@ -1,34 +1,42 @@
 const defaultCostService = require('../../services/defaultCostService');
 const CostChainBase = require('./costChainBase');
 
-class defaultCostChain extends CostChainBase {
+class DefaultCostChain extends CostChainBase {
   constructor(nextChain) {
     super(nextChain);
   }
 
   calculateMinute(startTime, endTime) {
-    const endTimeMs = new Date(endTime).getTime();
-    const startTimeMs = new Date(startTime).getTime();
+    try {
+      const endTimeMs = new Date(endTime).getTime();
+      const startTimeMs = new Date(startTime).getTime();
 
-    const minutes = parseInt((endTimeMs - startTimeMs) / 60000);
+      const minutes = parseInt((endTimeMs - startTimeMs) / 60000);
 
-    return minutes;
+      return minutes;
+    } catch (err) {
+      throw err;
+    }
   }
 
   async calculateCost(data) {
-    const { id, startTime, endTime } =
-      await defaultCostService.getLatestHistoryOfUser(data.historyId);
-    const { id, priceBase, pricePerMinute } =
-      await defaultCostService.getAreaPrice(data.deerAreaId);
+    try {
+      const { startTime, endTime, ...rest1 } =
+        await defaultCostService.getLatestHistoryOfUser(data.historyId);
+      const { priceBase, pricePerMinute, ...rest2 } =
+        await defaultCostService.getAreaPrice(data.deerAreaId);
 
-    const rideMinutes = this.calculateMinute(startTime, endTime);
-    const defaultCost = priceBase + pricePerMinute * rideMinutes;
+      const rideMinutes = this.calculateMinute(startTime, endTime);
+      const defaultCost = priceBase + pricePerMinute * rideMinutes;
 
-    data.baseCost = defaultCost;
-    data.finalCost = defaultCost;
+      data.baseCost = defaultCost;
+      data.finalCost = defaultCost;
 
-    return await this.goToNextChain(data);
+      return await this.goToNextChain(data);
+    } catch (err) {
+      throw err;
+    }
   }
 }
 
-module.exports.defaultCostChain = defaultCostChain;
+module.exports.DefaultCostChain = DefaultCostChain;

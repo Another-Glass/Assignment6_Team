@@ -8,16 +8,24 @@ class FreeChain extends CostChainBase {
   }
 
   async isInOneMinute(historyId) {
-    const returnInOneMinute = await historyService.returnInMinute(historyId);
-    return returnInOneMinute.value;
+    try {
+      const returnInOneMinute = await historyService.returnInMinute(historyId);
+      return returnInOneMinute.value;
+    } catch (err) {
+      throw err;
+    }
   }
 
   async calculateCost(data) {
-    if (this.isInOneMinute(data.historyId)) {
-      data.finalCost = 0;
-    }
+    try {
+      if (this.isInOneMinute(data.historyId)) {
+        data.finalCost = 0;
+      }
 
-    return await this.goToNextChain(data);
+      return await this.goToNextChain(data);
+    } catch (err) {
+      throw err;
+    }
   }
 }
 
