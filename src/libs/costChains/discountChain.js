@@ -8,8 +8,9 @@ class DiscountChain extends CostChainBase{
 	
   async isInParkingZone(endPoint) {
     const isParkingZone = await historyService.isInParkingZone(endPoint);
+    
     if(isParkingZone) return true
-    else return false;
+    return false;
   }
 
 	calculateCost(data) {    
