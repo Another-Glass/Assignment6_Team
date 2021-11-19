@@ -45,9 +45,9 @@
 |:-----:|:-----:|:-----: |
 |  <img src="https://avatars.githubusercontent.com/u/59385491?v=4" height=200 width=200> | <img src="https://avatars.githubusercontent.com/u/38933716?v=4" height=200 width=200> |<img src="https://avatars.githubusercontent.com/u/67402180?v=4" height=200 width=200>  |
 | **blog**: [Plus Ultra](https://overcome-the-limits.tistory.com/) </br> **github**: [epitone](https://github.com/epitoneproject)| **blog**: [sudocorp](https://sudocorp.tistory.com/) </br> **github**: [SibaDoge1](https://github.com/SibaDoge1)| **blog**: [raejun92.log](https://velog.io/@raejun92) </br> **github**: [raejun92](https://github.com/raejun92)
-| ![sprint6](https://img.shields.io/badge/wanted-sprint6-purple) |![sprint4](https://img.shields.io/badge/wanted-sprint6-purple)  | ![sprint6](https://img.shields.io/badge/wanted-sprint6-purple) |
-| 변동요금 조건 연산  | 확장성설계, 코드퀄리티관리 / DevOps | 거래내역 API, DB |
-| [프로젝트 회고](https://overcome-the-limits.tistory.com/entry/%ED%9A%8C%EA%B3%A0-%EC%9B%90%ED%8B%B0%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%BD%94%EC%8A%A4-4%EC%B0%A8-%EA%B3%BC%EC%A0%9C) | [프로젝트 회고](https://sudocorp.tistory.com/5) | [프로젝트 회고](https://velog.io/@raejun92/Assignment4-8%ED%8D%BC%EC%84%BC%ED%8A%B8)
+| ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) |![sprint6](https://img.shields.io/badge/wanted-sprint6-brown)  | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) |
+| 변동요금 조건 연산  | 확장성설계, 코드퀄리티관리 / DevOps | 조회, 요금계산 API |
+| [프로젝트 회고](https://overcome-the-limits.tistory.com/entry/%ED%9A%8C%EA%B3%A0-%EC%9B%90%ED%8B%B0%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%BD%94%EC%8A%A4-6%EC%B0%A8-%EA%B3%BC%EC%A0%9C) | [프로젝트 회고](https://sudocorp.tistory.com/7) | [프로젝트 회고](https://velog.io/@raejun92/Assignment6-%EB%94%94%EC%96%B4%EC%BD%94%ED%8D%BC%EB%A0%88%EC%9D%B4%EC%85%98)
 
 <br>
 <br>
@@ -56,9 +56,9 @@
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="https://avatars.githubusercontent.com/u/32833404?v=4" height=200 width=200> | <img src="https://avatars.githubusercontent.com/u/48472537?v=4" height=200 width=200> | <img src="https://avatars.githubusercontent.com/u/68373235?v=4" height=200 width=200> |
 | **blog**: [Makkiato](https://makkiato.tistory.com) </br> **github**: [Makkiato](https://github.com/Makkiato) | **blog**: [gusrlf14](https://velog.io/@gusrlf14) </br> **github**: [hyunghilkim](https://github.com/hyunghilkim) | **blog**: [dongjay00.log](https://velog.io/@dongjay00) </br> **github**: [dongjay00](https://github.com/dongjay00) |
-| ![sprint6](https://img.shields.io/badge/wanted-sprint6-purple) | ![sprint6](https://img.shields.io/badge/wanted-sprint6-purple) | ![sprint4](https://img.shields.io/badge/wanted-sprint6-purple) |
-|                    테스트 데이터 세팅, DB 쿼리              |                             변동요금 조건 연산                    |                              조회, 요금계산 API            |
-|                      [프로젝트 회고](https://makkiato.tistory.com/8)                       |                      [프로젝트 회고](https://velog.io/@gusrlf14/%EC%9B%90%ED%8B%B0%EB%93%9C-%EC%9C%84%EC%BD%94%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-4%ED%9A%8C%EC%B0%A8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0)                       | [프로젝트 회고](https://velog.io/@dongjay00/%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%84%A4%EB%B2%88%EC%A7%B8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0) |
+| ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) |
+|                    테스트 데이터 세팅, DB 쿼리              |                             변동요금 조건 연산                    |                              변동요금 조건 연산            |
+|                      [프로젝트 회고](https://makkiato.tistory.com/10)                       |                      [프로젝트 회고](https://velog.io/@gusrlf14/%EC%9B%90%ED%8B%B0%EB%93%9C-%EC%9C%84%EC%BD%94%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-4%ED%9A%8C%EC%B0%A8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0)                       | [프로젝트 회고](https://velog.io/@dongjay00/%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%84%A4%EB%B2%88%EC%A7%B8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0) |
 
 
 </div>
@@ -85,9 +85,8 @@
 ### [개발 요구사항]
 
 **✔️ API 목록**
-- 거래내역 조회 API
-- 입금 API
-- 출금 API
+- 요금계산 API
+
 
 
 <details><summary>[고려 사항 및 상세설명]</summary>
@@ -150,14 +149,14 @@
 
 ### [ 요금계산 API ]
 
-- 
+- 결제요금을 계산해주는 라이브러리로부터 정산받아 결과를 조회하는 API를 구현했습니다.
 
 <br>
 
 ### [ DB 조회 API, 공간정보 시각화 ]
 
-- 기업에서 확인 시의 편의를 위해 DB 테이블마다 전체조회를 할 수 있는 API를 추가해뒀습니다.
-- 또한 DB상의 공간정보를 시각화한 스프레드시트를 아래와 같이 제작해두었습니다.
+- 기업에서 확인 시, 편의를 위해 DB 테이블마다 전체조회를 할 수 있는 API를 추가했습니다.
+- 또한 DB상의 공간정보를 시각화한 스프레드시트를 아래와 같이 제작했습니다.
 - [DB 공간정보 목록](https://docs.google.com/spreadsheets/d/1w8VWcGIeXK5w-PNMLeMdp_M20VEIdTnv0e335UgKhbo/edit#gid=0)
 
 <br>
@@ -170,7 +169,7 @@
 
 ### [ 확장성을 위한 고려 ]
 
-- 
+- 책임연쇄패턴 방식으로 요금을 계산하는 라이브러리를 만들어 조건의 결합도를 낮추었습니다. 낮은 결합도는 이후 할인과 벌금 조건을 쉽게 추가, 삭제 할 수 있습니다.
 
 
 <br>
@@ -265,6 +264,62 @@
 
 
 ```
+📦src
+ ┣ 📂bin
+ ┃ ┗ 📜www.js
+ ┣ 📂configs
+ ┃ ┣ 📜db.js
+ ┃ ┗ 📜index.js
+ ┣ 📂controllers
+ ┃ ┣ 📜historyController.js
+ ┃ ┗ 📜listingController.js
+ ┣ 📂globals
+ ┃ ┣ 📜index.js
+ ┃ ┣ 📜responseMessage.js
+ ┃ ┣ 📜routes.js
+ ┃ ┗ 📜statusCode.js
+ ┣ 📂libs
+ ┃ ┗ 📂costChains
+ ┃ ┃ ┣ 📜costCalculator.js
+ ┃ ┃ ┣ 📜costChainBase.js
+ ┃ ┃ ┣ 📜defaultCostChain.js
+ ┃ ┃ ┣ 📜forbiddenAreaFineChain.js
+ ┃ ┃ ┣ 📜freeChain.js
+ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┣ 📜outOfAreaFineChain.js
+ ┃ ┃ ┣ 📜parkingDiscountChain.js
+ ┃ ┃ ┗ 📜transportChain.js
+ ┣ 📂models
+ ┃ ┣ 📜area.js
+ ┃ ┣ 📜deer.js
+ ┃ ┣ 📜forbiddenArea.js
+ ┃ ┣ 📜history.js
+ ┃ ┣ 📜index.js
+ ┃ ┣ 📜parkingZone.js
+ ┃ ┗ 📜user.js
+ ┣ 📂routes
+ ┃ ┣ 📜globalRouter.js
+ ┃ ┣ 📜historyRouter.js
+ ┃ ┗ 📜index.js
+ ┣ 📂services
+ ┃ ┣ 📜deerService.js
+ ┃ ┣ 📜defaultCostService.js
+ ┃ ┣ 📜historyService.js
+ ┃ ┗ 📜listingService.js
+ ┣ 📂utils
+ ┃ ┣ 📂errors
+ ┃ ┃ ┣ 📜commonError.js
+ ┃ ┃ ┗ 📜errors.js
+ ┃ ┣ 📜index.js
+ ┃ ┣ 📜logger.js
+ ┃ ┗ 📜resFormatter.js
+ ┣ 📜.env
+ ┣ 📜.eslintrc.json
+ ┣ 📜.gitignore
+ ┣ 📜.prettierrc.json
+ ┣ 📜app.js
+ ┣ 📜package-lock.json
+ ┗ 📜package.json
 
 
 ```
