@@ -24,20 +24,20 @@ module.exports = (sequelize, DataTypes) => {
 		},
   },{timestamps:false});
 	
-	history.associate = function (models) {
-    models.history.belongsTo(models.user, {
-      foreignKey: {
-        name: "userId", 
-        allowNull:false
-      },
-      onUpdate: 'CASCADE'
-    });
-  };
+	
 
 	history.associate = function (models) {
     models.history.belongsTo(models.deer, {
       foreignKey: {
         name: "deerId", 
+        allowNull:false
+      },
+      onUpdate: 'CASCADE'
+    });
+
+    models.history.belongsTo(models.user, {
+      foreignKey: {
+        name: "userId", 
         allowNull:false
       },
       onUpdate: 'CASCADE'
