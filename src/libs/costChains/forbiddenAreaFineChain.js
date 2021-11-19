@@ -7,15 +7,23 @@ class forbiddenAreaFineChain extends CostChainBase{
 	}
 	
   async isInForbidden(endPoint) {
-    const isForbidden = await historyService.isInForbidden(endPoint);
-    return isForbidden ? true : false
+		try {
+			const isForbidden = await historyService.isInForbidden(endPoint);
+    	return isForbidden ? true : false
+		} catch(err) {
+			throw err;
+		}
   }
 
 	async calculateCost(data) { 
-		if(this.isInForbidden(data.endPoint)) {
-      data.finalCost = data.finalCost + 6000;
-    }
-		return await this.goToNextChain(data);
+		try {
+			if(this.isInForbidden(data.endPoint)) {
+				data.finalCost = data.finalCost + 6000;
+			}
+			return await this.goToNextChain(data);
+		} catch(err) {
+			throw err;
+		}
 	}
 }
 
