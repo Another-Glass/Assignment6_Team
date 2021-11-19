@@ -32,7 +32,7 @@ class ValidationError extends Error { // 400
   }
 }
 
-class InternalServerError extends Error { // 400
+class InternalServerError extends Error { // 500
   constructor(message = responseMessage.INTERNAL_SERVER_ERROR , status = statusCode.INTERNAL_SERVER_ERROR) {
     super(message);
     this.status = status;

@@ -6,19 +6,19 @@ module.exports = (sequelize, DataTypes) => {
 			autoIncrement: true, 
       allowNull: false 
     },
-		useEndPoint: {
+		endPoint: {
 			type: DataTypes.GEOMETRY('POINT'),
 			allowNull: false 
 		},
-		useStartPoint: {
+		startPoint: {
 			type: DataTypes.GEOMETRY('POINT'),
 			allowNull: false 
 		},
-		useStartAt: {
+		startTime: {
 			type: DataTypes.DATE,
 			allowNull: false 
 		},
-		useEndAt: {
+		endTime: {
 			type: DataTypes.DATE,
 			allowNull: false 
 		},
