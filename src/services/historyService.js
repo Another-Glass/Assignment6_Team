@@ -1,31 +1,44 @@
 const models = require('../models');
 const logger = require('../utils/logger');
 
-
 //이용내역 가져오기
 exports.readHistory = async historyId => {
   try {
     const history = await models.sequelize.query(
-      "SELECT id, ST_AsGeoJson(endPoint) as endPoint,  ST_AsGeoJson(startPoint) as startPoint, startTime, endTime, deerId, userId FROM histories WHERE id = ?;",
-      { 
-        replacements:[historyId],
-        type: models.Sequelize.QueryTypes.SELECT 
-      }
-      );
+      'SELECT id, ST_AsGeoJson(endPoint) as endPoint,  ST_AsGeoJson(startPoint) as startPoint, startTime, endTime, deerId, userId FROM histories WHERE id = ?;',
+      {
+        replacements: [historyId],
+        type: models.Sequelize.QueryTypes.SELECT,
+      },
+    );
     return history[0];
   } catch (err) {
     throw err;
   }
 };
 
+// 디어 사용시간 가져오기
+exports.getHistoryTimes = async historyId => {
+  try {
+    const historyTimes = await models.history.findOne({
+      where: {
+        id: historyId,
+      },
+      attributes: ['id', 'startTime', 'endTime'],
+    });
+    return historyTimes;
+  } catch (err) {
+    throw err;
+  }
+};
 
 //기본요금
 
 /**
  * 30분 이내 환승이면 true, 아니면 false 반환
- * @param {사용자 아이디} userId 
- */ 
-exports.isTransport = async (userId) => {
+ * @param {사용자 아이디} userId
+ */
+exports.isTransport = async userId => {
   const query = `
   SELECT 
 	  HOUR(time_gap.diff) = 0 AND MINUTE(time_gap.diff) < 31
@@ -47,70 +60,60 @@ exports.isTransport = async (userId) => {
         )
       ) AS diff	 
   ) time_gap    
-  `
+  `;
   try {
-    let result = await models.sequelize.query(query,{
-      replacements : {
-        userId: userId
+    let result = await models.sequelize.query(query, {
+      replacements: {
+        userId: userId,
       },
-      type: models.sequelize.QueryTypes.SELECT
-    })
-    let toReturn = {}
-    
-    if(result[0].inTime){
-      toReturn.value = true
+      type: models.sequelize.QueryTypes.SELECT,
+    });
+    let toReturn = {};
+
+    if (result[0].inTime) {
+      toReturn.value = true;
       return toReturn;
     } else {
-      toReturn.value = false
+      toReturn.value = false;
       return toReturn;
     }
   } catch (err) {
-    throw err
+    throw err;
   }
-  
-}
+};
 /**
  * 1분 이내 사용이면 true, 아니면 false 반환
- * @param {사용내역 아이디} historyId 
+ * @param {사용내역 아이디} historyId
  */
-exports.returnInMinute = async (historyId) => {
+exports.returnInMinute = async historyId => {
   const query = `
   SELECT HOUR(time_gap.diff) = 0 AND MINUTE(time_gap.diff) < 1
  	 AS inMinute FROM (SELECT TIMEDIFF(startTime,endTime) AS diff FROM histories WHERE id = :historyId) time_gap
-  `
+  `;
   try {
-    let result = await models.sequelize.query(query,{
-      replacements : {
-        historyId: historyId
+    let result = await models.sequelize.query(query, {
+      replacements: {
+        historyId: historyId,
       },
-      type: models.sequelize.QueryTypes.SELECT
-    })
-    let toReturn = {}
-    if(result[0].inMinute){
-      toReturn.value = true
+      type: models.sequelize.QueryTypes.SELECT,
+    });
+    let toReturn = {};
+    if (result[0].inMinute) {
+      toReturn.value = true;
       return toReturn;
     } else {
-      toReturn.value = false
+      toReturn.value = false;
       return toReturn;
     }
   } catch (err) {
-    throw err
+    throw err;
   }
-}
-
-
+};
 
 //변동요금
 
+exports.isInForbidden = async () => {};
 
-exports.isInForbidden = async ()=>{
+exports.isInAllowedArea = async () => {};
 
-}
-
-exports.isInAllowedArea = async ()=>{
-  
-}
-
-exports.isInParkingZone = async ()=>{
-  
-}
+exports.isInParkingZone = async () => {};
