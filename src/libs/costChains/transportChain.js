@@ -1,6 +1,6 @@
 const CostChainBase = require('./costChainBase');
 const historyService = require('../../services/historyService');
-const defaultCostService = require('../../services/defaultCostService');
+const areaService = require('../../services/areaService');
 
 class TransportChain extends CostChainBase {
   constructor(nextChain) {
@@ -10,6 +10,7 @@ class TransportChain extends CostChainBase {
   async isInTransportTime(userId) {
     try {
       const isInTransport = await historyService.isTransport(userId);
+
       return isInTransport.value;
     } catch (err) {
       throw err;
@@ -18,9 +19,10 @@ class TransportChain extends CostChainBase {
 
   async calculateCost(data) {
     try {
-      if (this.isInTransportTime(data.userId)) {
-        const { priceBase, pricePerMinute, ...rest } =
-          await defaultCostService.getAreaPrice(data.deerAreaId);
+      if (await this.isInTransportTime(data.userId)) {
+        const { priceBase, pricePerMinute } = await areaService.getAreaPrice(
+          data.deerAreaId,
+        );
 
         data.finalCost -= priceBase;
       }

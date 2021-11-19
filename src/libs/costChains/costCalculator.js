@@ -46,7 +46,7 @@ class CostCalculator {
 				endTime: history.endTime,
 			}
 
-			logger.logWithTag('Chain preprocessed data IS : '+ JSON.stringify(this.data), 'src:costChain')
+			logger.logWithTag('Chain preprocessed data is : '+ JSON.stringify(data), 'src:costChain')
 			return data;
 	}
 }

@@ -14,7 +14,7 @@ class CostChainBase {
 
 	//다음 체인으로 이동
 	async goToNextChain(data){
-			logger.logWithTag('Chaining...finalCost IS :\n'+data.finalCost, 'src:costChain')
+			logger.logWithTag('Chaining...currentCost is : '+data.finalCost, 'src:costChain')
 
 			if(this._nextChain !== undefined)
 				return await this._nextChain.calculateCost(data)

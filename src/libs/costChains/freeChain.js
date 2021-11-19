@@ -18,7 +18,7 @@ class FreeChain extends CostChainBase {
 
   async calculateCost(data) {
     try {
-      if (this.isInOneMinute(data.historyId)) {
+      if (await this.isInOneMinute(data.historyId)) {
         data.finalCost = 0;
       }
 

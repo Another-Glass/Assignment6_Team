@@ -1,12 +1,12 @@
 const { statusCode, responseMessage } = require('../globals');
 const { resFormatter } = require('../utils');
 const logger = require('../utils/logger');
-const inquiryService = require('../services/inquiryService');
+const listingService = require('../services/listingService');
 
 // 유저 조회
 exports.getAllUser = async (req, res, next) => {
 	try {
-		const users = await inquiryService.readUserList();
+		const users = await listingService.readUserList();
 
 		return res
 			.status(statusCode.OK)
@@ -19,7 +19,7 @@ exports.getAllUser = async (req, res, next) => {
 // 이용내역 조회
 exports.getAllHistory = async (req, res, next) => {
 	try {
-		const histories = await inquiryService.readHistoryList();
+		const histories = await listingService.readHistoryList();
 
 		return res
 			.status(statusCode.OK)
@@ -32,7 +32,7 @@ exports.getAllHistory = async (req, res, next) => {
 // 킥보드 조회
 exports.getAllDeer = async (req, res, next) => {
 	try {
-		const deers = await inquiryService.readDeerList();
+		const deers = await listingService.readDeerList();
 
 		return res
 			.status(statusCode.OK)
@@ -45,7 +45,7 @@ exports.getAllDeer = async (req, res, next) => {
 // 지역 조회
 exports.getAllArea = async (req, res, next) => {
 	try {
-		const areas = await inquiryService.readAreaList();
+		const areas = await listingService.readAreaList();
 
 		return res
 			.status(statusCode.OK)
@@ -58,7 +58,7 @@ exports.getAllArea = async (req, res, next) => {
 // 파킹존 조회
 exports.getAllParkingZone = async (req, res, next) => {
 	try {
-		const parkingZones = await inquiryService.readParkingZoneList();
+		const parkingZones = await listingService.readParkingZoneList();
 
 		return res
 			.status(statusCode.OK)
@@ -71,7 +71,7 @@ exports.getAllParkingZone = async (req, res, next) => {
 // 반납금지구역 조회
 exports.getAllForbiddenArea = async (req, res, next) => {
 	try {
-		const forbiddenArea = await inquiryService.readForbiddenAreaList();
+		const forbiddenArea = await listingService.readForbiddenAreaList();
 
 		return res
 			.status(statusCode.OK)
