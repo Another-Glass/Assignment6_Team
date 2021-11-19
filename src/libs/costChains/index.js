@@ -26,9 +26,21 @@ logger.logWithTag('Chains : \n' + JSON.stringify(chains), 'src:costChain');
 
 //체인 생성 및 연결
 let costCalculator = new CostCalculator();
-costCalculator.addChain(new chains['defaultCostChain'].DefaultCostChain);
-costCalculator.addChain(new chains['parkingDiscountChain'].ParkingDiscountChain);
-costCalculator.addChain(new chains['outOfAreaFineChain'].OutOfAreaFineChain);
-costCalculator.addChain(new chains['forbiddenAreaFineChain'].ForbiddenAreaFineChain);
+
+// 기본 확인사항
+costCalculator.addChain(new chains['defaultCostChain'].DefaultCostChain());
+costCalculator.addChain(new chains['freeChain'].FreeChain());
+
+// 벌금 부과
+costCalculator.addChain(new chains['outOfAreaFineChain'].OutOfAreaFineChain());
+costCalculator.addChain(
+  new chains['forbiddenAreaFineChain'].ForbiddenAreaFineChain(),
+);
+
+// 할인 혜택
+costCalculator.addChain(
+  new chains['parkingDiscountChain'].ParkingDiscountChain(),
+);
+costCalculator.addChain(new chains['transportChain'].TransportChain());
 
 module.exports = costCalculator;
