@@ -3,7 +3,9 @@ const { resFormatter } = require('../utils');
 const logger = require('../utils/logger');
 const { ValidationError, EntityNotExistError, InternalServerError } = require('../utils/errors/commonError');
 const historyService = require('../services/historyService');
-// const costCalculator = require('../libs/costChains');
+const costCalculator = require('../libs/costChains');
+
+
 //이용요금 계산
 exports.getFinalCost = async (req, res, next) => {
 	try {
