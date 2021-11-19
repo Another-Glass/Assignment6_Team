@@ -10,12 +10,12 @@ class outOfAreaFineChain extends  CostChainBase{
       return await historyService.isInAllowedArea(areaId, point); 
   }
 
-	calculateCost(data){
+	async calculateCost(data){
 		if(!this.isInAllowedArea(data.areaId, data.endPoint).value) {
       data.finalCost = data.finalCost + this.isInAllowedArea(data.areaId, data.endPoint).distance * 100;        
     }
 		
-		return this.goToNextChain(data);
+		return await this.goToNextChain(data);
 	}
 }
 
