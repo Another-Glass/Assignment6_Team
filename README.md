@@ -1,7 +1,6 @@
 <div align="center">
 
-  # 원티드 백엔드 프리온보딩 4차 과제 - 8퍼센트
-
+  # 원티드 백엔드 프리온보딩 6차 과제 - 디어코퍼레이션
   <img height="400" width="700" src="https://user-images.githubusercontent.com/59385491/139865333-05dabf0a-e283-4e51-94d9-8a42e6acbb7b.jpeg">
 
 
@@ -31,9 +30,9 @@
 
 ## 🎤 소개
 
-이 레포지토리는 [원티드 프리온보딩 백엔드 코스](https://www.wanted.co.kr/events/pre_onboarding_course_4) 4차 과제를 위해 만들어졌습니다. 
+이 레포지토리는 [원티드 프리온보딩 백엔드 코스](https://www.wanted.co.kr/events/pre_onboarding_course_4) 6차 과제를 위해 만들어졌습니다. 
 
--   일정 : 2021년 11월 11일(목) 오후 6시 ~ 11월 13일(토) 오전 10시
+-   일정 : 2021년 11월 18일(목) 오후 6시 ~ 11월 22일(월) 오후 2시
 
 <br>
 <br>
@@ -46,9 +45,9 @@
 |:-----:|:-----:|:-----: |
 |  <img src="https://avatars.githubusercontent.com/u/59385491?v=4" height=200 width=200> | <img src="https://avatars.githubusercontent.com/u/38933716?v=4" height=200 width=200> |<img src="https://avatars.githubusercontent.com/u/67402180?v=4" height=200 width=200>  |
 | **blog**: [Plus Ultra](https://overcome-the-limits.tistory.com/) </br> **github**: [epitone](https://github.com/epitoneproject)| **blog**: [sudocorp](https://sudocorp.tistory.com/) </br> **github**: [SibaDoge1](https://github.com/SibaDoge1)| **blog**: [raejun92.log](https://velog.io/@raejun92) </br> **github**: [raejun92](https://github.com/raejun92)
-| ![sprint4](https://img.shields.io/badge/wanted-sprint4-purple) |![sprint4](https://img.shields.io/badge/wanted-sprint4-purple)  | ![sprint4](https://img.shields.io/badge/wanted-sprint4-purple) |
-| 유저 & 계좌생성 API, DB / Test   | 입출금 API, DB / DevOps | 거래내역 API, DB |
-| [프로젝트 회고](https://overcome-the-limits.tistory.com/entry/%ED%9A%8C%EA%B3%A0-%EC%9B%90%ED%8B%B0%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%BD%94%EC%8A%A4-4%EC%B0%A8-%EA%B3%BC%EC%A0%9C) | [프로젝트 회고](https://sudocorp.tistory.com/5) | [프로젝트 회고](https://velog.io/@raejun92/Assignment4-8%ED%8D%BC%EC%84%BC%ED%8A%B8)
+| ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) |![sprint6](https://img.shields.io/badge/wanted-sprint6-brown)  | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) |
+| 변동요금 조건 연산  | 확장성설계, 코드퀄리티관리 / DevOps | 조회, 요금계산 API |
+| [프로젝트 회고](https://overcome-the-limits.tistory.com/entry/%ED%9A%8C%EA%B3%A0-%EC%9B%90%ED%8B%B0%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%BD%94%EC%8A%A4-6%EC%B0%A8-%EA%B3%BC%EC%A0%9C) | [프로젝트 회고](https://sudocorp.tistory.com/7) | [프로젝트 회고](https://velog.io/@raejun92/Assignment6-%EB%94%94%EC%96%B4%EC%BD%94%ED%8D%BC%EB%A0%88%EC%9D%B4%EC%85%98)
 
 <br>
 <br>
@@ -57,9 +56,9 @@
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="https://avatars.githubusercontent.com/u/32833404?v=4" height=200 width=200> | <img src="https://avatars.githubusercontent.com/u/48472537?v=4" height=200 width=200> | <img src="https://avatars.githubusercontent.com/u/68373235?v=4" height=200 width=200> |
 | **blog**: [Makkiato](https://makkiato.tistory.com) </br> **github**: [Makkiato](https://github.com/Makkiato) | **blog**: [gusrlf14](https://velog.io/@gusrlf14) </br> **github**: [hyunghilkim](https://github.com/hyunghilkim) | **blog**: [dongjay00.log](https://velog.io/@dongjay00) </br> **github**: [dongjay00](https://github.com/dongjay00) |
-| ![sprint4](https://img.shields.io/badge/wanted-sprint4-purple) | ![sprint4](https://img.shields.io/badge/wanted-sprint4-purple) | ![sprint4](https://img.shields.io/badge/wanted-sprint4-purple) |
-|                    거래내역 API, DB                      |                             입출금 API, DB                              |                              유저 & 계좌생성 API, DB / Test                              |
-|                      [프로젝트 회고](https://makkiato.tistory.com/8)                       |                      [프로젝트 회고](https://velog.io/@gusrlf14/%EC%9B%90%ED%8B%B0%EB%93%9C-%EC%9C%84%EC%BD%94%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-4%ED%9A%8C%EC%B0%A8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0)                       | [프로젝트 회고](https://velog.io/@dongjay00/%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%84%A4%EB%B2%88%EC%A7%B8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0) |
+| ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) | ![sprint6](https://img.shields.io/badge/wanted-sprint6-brown) |
+|                    테스트 데이터 세팅, DB 쿼리              |                             변동요금 조건 연산                    |                              변동요금 조건 연산            |
+|                      [프로젝트 회고](https://makkiato.tistory.com/10)                       |                      [프로젝트 회고](https://velog.io/@gusrlf14/%EC%9B%90%ED%8B%B0%EB%93%9C-%EC%9C%84%EC%BD%94%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EB%B0%B1%EC%97%94%EB%93%9C-6%ED%9A%8C%EC%B0%A8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0)                       | [프로젝트 회고](https://velog.io/@dongjay00/%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9-%EC%97%AC%EC%84%AF%EB%B2%88%EC%A7%B8-%EA%B3%BC%EC%A0%9C-%ED%9A%8C%EA%B3%A0) |
 
 
 </div>
@@ -72,7 +71,7 @@
 
 ### [필수 포함 사항]
 
-- READ.ME 작성
+- README 작성
     - 프로젝트 빌드, 자세한 실행 방법 명시
     - 구현 방법과 이유에 대한 간략한 설명
     - 완료된 시스템이 배포된 서버의 주소
@@ -86,85 +85,37 @@
 ### [개발 요구사항]
 
 **✔️ API 목록**
-- 거래내역 조회 API
-- 입금 API
-- 출금 API
+- 요금계산 API
+
 
 
 <details><summary>[고려 사항 및 상세설명]</summary>
-  **✔️ 주요 고려 사항은 다음과 같습니다.**
+
+### 주요 평가 사항
+
+- 주어진 정보를 기술적으로 설계하고 구현할 수 있는 역량
+- 확장성을 고려한 시스템 설계 및 구현
+
+### 과제 안내
+
+디어는 사용자의 요금을 계산하기 위해 다양한 상황을 고려합니다. 
+
+- 할인 조건도 있습니다. 사용자가 파킹존에서 반납하는 경우 요금의 30%를 할인해주며, 사용자가 마지막 이용으로부터 30분 이내에 다시 이용하면 기본요금을 면제해줍니다.
+    - 우선 지역별로 다양한 요금제를 적용하고 있습니다. 예를 들어 건대에서 이용하는 유저는 기본요금 790원에 분당요금 150원, 여수에서 이용하는 유저는 기본요금 300원에 분당요금 70원으로 적용됩니다.
+- 벌금 조건도 있습니다. 사용자가 지역 바깥에 반납한 경우 얼마나 멀리 떨어져있는지 거리에 비례하는 벌금을 부과하며, 반납 금지로 지정된 구역에 반납하면 6,000원의 벌금을 요금에 추가로 부과합니다.
+- 예외도 있는데, 킥보드가 고장나서 정상적인 이용을 못하는 경우의 유저들을 배려하여 1분 이내의 이용에는 요금을 청구하지 않고 있습니다.
+
+최근에 다양한 할인과 벌금을 사용하여 지자체와 협력하는 경우가 점점 많아지고 있어 요금제에 새로운 할인/벌금 조건을 추가하는 일을 쉽게 만드려고 합니다. 어떻게 하면 앞으로 발생할 수 있는 다양한 할인과 벌금 조건을 기존의 요금제에 쉽게 추가할 수 있는 소프트웨어를 만들 수 있을까요? 
+
+우선은 사용자의 이용에 관한 정보를 알려주면 현재의 요금 정책에 따라 요금을 계산해주는 API를 만들어주세요. 그 다음은, 기능을 유지한 채로 새로운 할인이나 벌금 조건이 쉽게 추가될 수 있게 코드를 개선하여 최종 코드를 만들어주세요.
+
+**다음과 같은 정보들이 도움이 될 것 같아요.**
 
 ---
 
-- 계좌의 잔액을 별도로 관리해야 하며, 계좌의 잔액과 거래내역의 잔액의 무결성의 보장
-- DB를 설계 할때 각 칼럼의 타입과 제약
-
-**✔️ 구현하지 않아도 되는 부분은 다음과 같습니다.**
-
----
-
-- 문제와 관련되지 않은 부가적인 정보. 예를 들어 사용자 테이블의 이메일, 주소, 성별 등
-- 프론트앤드 관련 부분
-
-**✔️  제약사항은 다음과 같습니다.**
-
----
-
-- (**8퍼센트가 직접 로컬에서 실행하여 테스트를 원하는 경우를 위해**) 테스트의 편의성을 위해 mysql, postgresql 대신 sqllite를 사용해 주세요.
-
-
-<br>
-
-
-**✔️  상세설명**
-
-**1)** 거래내역 조회 **API**
-
-- 아래와 같은 조회 화면에서 사용되는 API를 고려하시면 됩니다.
-    <img src="https://lh6.googleusercontent.com/PdtI4YvVu3biJ0TyEGCHVrR0fAPOQsILYHEczQHmR3UMKEINxlIjjp_-3gOGu5yGh3YXpxbegNYqNCEosUosq3nKRTMpte6ZiRUccX8iRlD5rxLJ1HWFy6E2HcMFMIMGZO7eVQl5" height=400 width=600>
-   
-    
-
-거래내역 API는 다음을 만족해야 합니다.
-
-- 계좌의 소유주만 요청 할 수 있어야 합니다.
-- 거래일시에 대한 필터링이 가능해야 합니다.
-- 출금, 입금만 선택해서 필터링을 할 수 있어야 합니다.
-- Pagination이 필요 합니다.
-- 다음 사항이 응답에 포함되어야 합니다.
-    - 거래일시
-    - 거래금액
-    - 잔액
-    - 거래종류 (출금/입금)
-    - 적요
-
----
-
-**2)** 입금 **API**
-
-입금 API는 다음을 만족해야 합니다.
-
-- 계좌의 소유주만 요청 할 수 있어야 합니다.
-
----
-
-**3)** 출금 **API**
-
-출금 API는 다음을 만족해야 합니다.
-
-- 계좌의 소유주만 요청 할 수 있어야 합니다.
-- 계좌의 잔액내에서만 출금 할 수 있어야 합니다. 잔액을 넘어선 출금 요청에 대해서는 적절한 에러처리가 되어야 합니다.
-
----
-
-**4)** 가산점
-
-다음의 경우 가산점이 있습니다.
-
-- Unit test의 구현
-- Functional Test 의 구현 (입금, 조회, 출금에 대한 시나리오 테스트)
-- 거래내역이 1억건을 넘어갈 때에 대한 고려
-    - 이를 고려하여 어떤 설계를 추가하셨는지를 README에 남겨 주세요.
+- 요금제가 사용자 입장에서 합리적이고 이해가 쉬운 요금제라면 좋을 것 같아요.
+- 앞으로도 할인과 벌금 조건은 새로운 조건이 굉장히 많이 추가되거나 변경될 것 같아요.
+- 가장 최근의 할인/벌금 조건의 변경은 '특정 킥보드는 파킹존에 반납하면 무조건 무료' 였습니다.
 
 
 
@@ -177,90 +128,131 @@
 
 </br>
 
-![8퍼센트ERD](https://user-images.githubusercontent.com/48472537/141442936-320c7f6b-199f-4baf-bae4-9447c28bbc52.png)
+![디어ERD](https://user-images.githubusercontent.com/38933716/142597056-cf4c44f1-a923-46e4-be5c-88506f96fad2.png)
 
 </br>
 </br>
 
 ## 📕 작업 효율 개선 방안
 
-- Node.js, express, Sequelize, sqlLite, 회원가입 로그인 API, 거래내역 조회 API, 입금/출금API, 계좌생성 API를 구현하였습니다.
-- 인증, 인가를 위해 JWT와 쿠키를 활용했습니다.
+- Node.js, express, Sequelize를 이용하여 요금계산 Api를 구현하였습니다.
 - 코드 컨벤션, 커밋 컨벤션, Git Flow를 지켜가며 작업했습니다.
 - Github Project, 마일스톤을 활용해서 백로그, 이슈 관리를 진행했습니다.
-- 계층 분리를 통해 코드의 가독성을 높였습니다.
+- Service, Controller 등의 계층 분리를 통해 코드의 가독성을 높였습니다.
 - 리팩토링을 통해 가독성을 높이고, 유지보수를 편하게 하기 위해 노력 했습니다.
+
 
 </br>
 </br>
 
 ## 💡 구현 기능
 
-### [ 회원가입, 로그인 ]
+### [ 요금계산 API ]
 
-- 인증방식은 JWT를 쿠키에 저장하는 방식으로 구현 하였습니다.
-
-<br>
-
-### [ 입출금 API ]
-
-- 계좌 소유주만 요청 할 수 있게 구현 하였습니다.
-- 계좌의 잔액 내에서만 출금 할 수 있고, 잔액을 넘어선 출금 요청에 대해서는 적절한 에러처리를 하였습니다.
-
+- 결제요금을 계산해주는 라이브러리를 독립적으로 만들고, 이를 사용하여 최종요금을 조회하는 API를 구현했습니다.
 
 <br>
 
+### [ DB 조회 API, 공간정보 시각화 ]
 
-### [ 거래내역 조회 API ]
+- 확인 시의 편의를 위해 DB 테이블마다 전체조회를 할 수 있는 API를 추가했습니다.
+- 또한 DB상의 공간정보를 시각화한 스프레드시트를 아래와 같이 제작했습니다.
+- [DB 공간정보 목록](https://docs.google.com/spreadsheets/d/1w8VWcGIeXK5w-PNMLeMdp_M20VEIdTnv0e335UgKhbo/edit#gid=0)
+- 아래는 테스트에 사용한 이용내역에 대한 설명입니다.
+  
+  <details><summary>[테스트 데이터 사용내역]</summary>
+  [id] - [지역(기본요금/시간요금)],[사용시간],[기타],[예상요금] 
 
-- 계좌의 소유주만 요청 할 수 있게 구현하였고, Pagination기능을 구현 하였습니다.
-- 거래 일시에 대한 필터링이 가능하게 구현 하였습니다.
-- 출금, 입금만 선택하여 필터링 될수 있게 구현 하였습니다.
+  1번 - 2번지역(400/80), 25분, 그외없음, expect 2400
+
+  2번 - 2번지역(400/80), 20분, 그외없음, expect 2000
+
+  4번 - 2번지역(400/80), 30초, 1분이내무료, expect 0
+
+  5번 - 2번지역(400/80), 10분, 6번 환승적용을 위한 용도, expect 1200
+
+  6번 - 2번지역(400/80), 35분, 30분이내환승용도, expect 2800
+
+  8번 - 2번지역(400/80), 10분, 9번 환승적용을 위한용도, expect 1200
+
+  9번 - 2번지역(400/80), 35분, 환승, 지역이탈(92005m),금지구역, expect 9209300
+
+  10번 - 4번지역(630/100), 10분, 지역이탈(97817m),주차구역, expect 9782841
+
+  11번 - 4번지역(630/100),15분,주차구역, expect 1491
+
+  </details>  
 
 <br>
-
 
 ### [ 에러 핸들링 ]
 
 - 자바스크립트 자체 내장 Error 클래스를 상속 받아서, 커스텀 에러를 생성해서 관리했습니다.
 
+<br>
+<br>
+
+## 📕 확장성을 위한 고려 
+
+</br>
+
+- 과제분석을 통해 요금조건이 다양하고, 추가와 제거의 가능성이 많으며 조건의, 적용순서도 변경될 여지가 많다는 특징을 확인했습니다. 
+- 고민을 거쳐 해당 특징들에 적합한 책임연쇄패턴을 적용하기로 했습니다.
+  
+  <br>
+  
+  <img src="https://user-images.githubusercontent.com/38933716/142721613-771f811a-befb-4c40-a101-c6e687bcaf10.png" height=500>
+
+  *src/libs/costCalculator/ 폴더 내의 클래스 다이어그램*
+  
+
+1. CostChainBase는 Chain을 추상화한 인터페이스의 용도로 만들었습니다. 다만, 자바스크립트는 Duck Typing으로인해 인터페이스 개념이 존재하지 않으므로 어쩔 수 없이 클래스 상속을 이용했습니다.
+   
+2. ConcreteChain클래스들은 CostChainBase를 상속하여 구체화된 클래스들입니다. calculateCost 메소드를 통해 각자의 요금조건을 계산하고 goToNextChain을 통해 다음 체인으로 넘깁니다.
+   
+3. CostChainManager는 체인연결, 데이터 전처리 등 종합적으로 체인을 관리하는 클래스입니다. addChain으로 체인을 추가하고 최종적으로는 이 클래스의 calculateCost 메소드를 호출하여 요금을 계산합니다.
+   
+   <br>
+
+    <img src="https://user-images.githubusercontent.com/38933716/142721905-5e744b7f-09ac-4f5c-96af-d8ea644d7990.png" height=400>
+   
+    *CostChainBase 실제 코드*
+
+    <img src="https://user-images.githubusercontent.com/38933716/142722006-968725a4-8439-4935-a1b3-11044168ac79.png" height=500>
+   
+    *CostChainManager 실제 코드*
 
 <br>
+
+- 추가적으로 다른 부분과의 의존성을 낮추기 위해, node.js의 index.js파일 모듈 기능을 이용해 독립적인 폴더로 구분하기로 했습니다.
+    <img src="https://user-images.githubusercontent.com/38933716/142722113-e5bd9325-3f10-47a5-938a-c681c8d70238.png" height=400>
+
+    */src/libs/costCalculator/index.js 파일의 내용*
+
+    ```
+    const costCalculator = require('../libs/costChains');
+    let finalCost = await costCalculator.calculateCost(historyId);
+    ```
+    *실제 사용 예*
+
 <br>
+
+- 위와 같은 설계를 통해 요금조건의 추가, 삭제, 순서변경 등의 변화에 있어서 기존코드의 변경을 최소화 할 수 있었습니다.
+- SOLID원칙들 중 기능의 확장에는 열려있고 기존 코드의 변경에는 닫혀있는 Open-Closed 원칙을 만족할 수 있었습니다. SOLID의 일부 다른 원칙 또한 만족하는 것으로 보입니다.
+
+
+
+</br>
+</br>
 
 ## ➕ 협업을 위한 노력
 
 - 구성원들의 전체 의견을 반영하여 API 명세와 DB모델을 구축 하였습니다.
 - 긴밀하게 소통하여, 신속하게 문제를 인식하고, 신속하게 해결 하기 위해 노력 하였습니다.
 - 전체 작업을 도메인 단위로 분리하여 구성원 간의 병목현상을 줄였습니다.
-
-</br>
-</br>
-
-## 🚥 거래내역이 1억건을 넘어갈 때에 대한 고려
+- [과제에 사용한 노션 페이지](https://www.notion.so/pre-onboarding15/6-eacb8ed1521e4565909d455003d05a26)
 
 
-### 1. subquery를 이용한 수동 execution plan
-
-- subquery를 이용해 시스템의 자동으로 생성되는 execution plan이 아닌 의도한 대로 최적의 탐색 방법이 나오도록 했습니다. 거래내역의 특성상 온전히 나의 거래내역만 보여주면 되고, cardinality 또한 의미있게 높을 뿐더러, FK index가 되어있어서 첫 where clause는 accountNumber에 할당 했습니다.
-- 다음은 입금,출금으로, 50%의 cardinality 기대값을 갖는 transactionType을 선정했습니다.
-그리고 이전에 조회한 페이지에 이어서 연속한 페이지를 찾는 경우에는 이전의 탐색정보를 활용하여 높은 page 값에서의 overhead를 줄이고, 마지막으로 요청한 기간에 대해서 조건을 맞췄습니다.
-
-### 2. pagination 기능 강화
-
-- 가장 간단하게 사용할 수 있는 pagination인 limit - offset의 경우, 결국 offset 만큼의 탐색을 진행해야 하기에 page 값이 높아질수록 overhead가 커지는 문제가 있습니다..
-- 그래서 이전 page의 마지막 row의 PK를 비롯한, 해당 사용자의 pagination context를 Cookie로 클라이언트에 전달했습니다.
-- 해당 context는 다음 조회 요청에 돌아와서, 새 요청과 비교하여 적용할 수 있는지를 판단합니다.
-다만 Cookie에 광범위한 데이터를 기록할수는 없기에, 단순히 연속적으로 1페이지, 2페이지, 3페이지 순서대로 넘어가는 경우에만 효과를 받는 점은 아쉽다고 느끼는 부분입니다.
-
-### 3. (미적용) Stored procedure와 Prepared statements를 이용한 network, compile overhead 감소
-
-- 실제로는 execution plan 이외에도, 어떻게 실행을 시작시킬지, 얼마만큼이 정확히 필요할지를 예측하는 것도 최적화에 있어서 중요하다고 생각합니다. 많은 DBMS에서 지원하는 기능인 Stored procedure와 Prepared statements를 사용하면 쿼리를 캐싱하는데 도움이 될거라 생각합니다. 
-- 다만 이번 과제에서는 시간의 부족으로 이를 적용하지는 못했습니다.
-
-### 4. (미적용) Table 분할 및 필요시 View를 이용한 통합
-- 아무리 index가 잘 되어있다고 해도, 전체 용량이 커지면 index도 커지고, 이는 INSERT와 DELETE 과정에서 추가적인 overhead가 계속 발생할 것임을 예상했습니다.
-- 이번과제에는 적용하지 못했지만 언젠가 1억건이 넘는 거래가 있다고 할때, 테이블을 분할하거나 분산저장시스템을 이용하는 것이 좋다고 생각합니다.
 
 <br>
 <br>
@@ -271,17 +263,17 @@
 - npm start를 통해 서버를 구동합니다.
 - src 폴더에 .env 파일을 설정해서, 환경변수를 설정합니다.
 - npm start로 서버를 구동시키고, npm test를 입력하면 단위 테스트가 가능합니다.
-- [.env설정 노션 링크](https://www.notion.so/pre-onboarding15/8-3fe38392fa5841ebad5fa99306f0205a)
+- [.env설정 노션 링크](https://www.notion.so/pre-onboarding15/df79485f22e64fdaa3011e5392797de6)
   - <details><summary><b>링크 접속불가 시 .env 파일 설정 방법</b></summary>
 
     ```
-    PORT= '서버의 포트'
-    JWT_SECERT= '원하는 시크릿코드'
-    JWT_ALGO="HS256"
-    ADMIN_USER="test@naver.com"
-    ADMIN_PASSWORD="1234"
-    HOST="http://localhost:4000"
-    IS_SQLLITE=true
+    RDS_DATABASE=DB 스키마 명
+    RDS_USERNAME=DB 유저 명
+    RDS_PASSWORD=DB 유저 비밀번호
+    RDS_HOSTNAME=DB 주소
+    RDS_PORT=DB 포트
+    PORT=http서버 포트
+    IS_SQLLITE=false
     ```
 
 
@@ -296,19 +288,12 @@
 
 - Postman을 활용하여 API 작동 테스트를 진행했습니다. 
 - __배포된 서버 주소__ 및 자세한 API 명세는 아래에서 확인 가능합니다.
-- [🗂 API Description Link](https://documenter.getpostman.com/view/18068137/UVC8C5cm)
-- [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/18068137/UVC8C5cm) 을 클릭하여 웹브라우저 혹은 Postman 클라이언트에 콜렉션이 로드되면
-   1. Variables 탭에서 서버 Host와 Port를 지정합니다. (기본값이 지정되어 있습니다.
-   2. Variables 탭에서 테스트하는 동안 사용할 username과 password 그리고 newProjectName을 지정합니다. (기본값이 지정되어 있습니다.)
-   3. 그후 우측 상단의 Run 버튼을 눌러 RUN ORDER 화면에 진입한 뒤 Run \[Collection Name\]을 클릭하면, 이상적인 상황에서의 테스트가 진행됩니다.
-    <img src = "https://user-images.githubusercontent.com/32833404/140971968-5bbe1a9a-5dd4-43a4-80f5-54f36146cabf.jpg">
+- [🗂 API Description Link](https://documenter.getpostman.com/view/18068137/UVJWpzT4)
+- [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/18068137/UVJWpzT4) 을 클릭하여 웹브라우저 혹은 Postman 클라이언트에 콜렉션이 로드되면
+   1. Variables 탭에서 서버 Host와 Port를 지정합니다. (기본값이 지정되어 있습니다.)
+   2. 그후 우측 상단의 Run 버튼을 눌러 RUN ORDER 화면에 진입한 뒤 Run \[Collection Name\]을 클릭하면, 이상적인 상황에서의 테스트가 진행됩니다.
        
-   4. 좌측의 Workspace 화면에서 해당 콜렉션과 그 요청에는 여러 이상적이지 않은 상황의 테스트에 대한 예시가 있습니다.</br>
-    <img src ="https://user-images.githubusercontent.com/32833404/140972241-79be0bbf-d147-4a71-981c-d6b797b13901.png">
-
-        **유의사항**
-        *일부 요청의 경우 JWT를 필요로합니다. JWT는 로그인 과정에서 "Set-Cookie" 헤더를 통해 클라이언트가 스스로 관리하게끔 전달됩니다.
- 
+   3. 요청마다 여러 이상적이지 않은 상황의 테스트에 대한 예시가 있습니다.</br>
  
 </br>
 </br>
@@ -335,7 +320,7 @@
 </br>
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/59385491/141483778-1fa0cdce-0cfd-4d67-8fba-434d8ee5e124.png" height=850>
+<img src="https://user-images.githubusercontent.com/38933716/142599090-85aa54f9-dd94-4183-ac2f-43151eac07b6.png" height=850>
 </div>
 
 
@@ -349,84 +334,81 @@
 
 
 ```
-
 📦src
  ┣ 📂bin
  ┃ ┗ 📜www.js
- ┃
  ┣ 📂configs
+ ┃ ┣ 📜cost.js
  ┃ ┣ 📜db.js
- ┃ ┣ 📜index.js
- ┃ ┗ 📜secretKey.js
- ┃
+ ┃ ┗ 📜index.js
  ┣ 📂controllers
- ┃ ┣ 📜accountController.js
- ┃ ┣ 📜transactionController.js
- ┃ ┗ 📜userController.js
- ┃
+ ┃ ┣ 📜historyController.js
+ ┃ ┗ 📜listingController.js
  ┣ 📂globals
  ┃ ┣ 📜index.js
  ┃ ┣ 📜responseMessage.js
  ┃ ┣ 📜routes.js
  ┃ ┗ 📜statusCode.js
- ┃
  ┣ 📂libs
- ┃ ┣ 📜encryption.js
- ┃ ┗ 📜jwt.js
- ┃
+ ┃ ┗ 📂costCalculator
+ ┃ ┃ ┣ 📂chains
+ ┃ ┃ ┃ ┣ 📜DefaultCostChain.js
+ ┃ ┃ ┃ ┣ 📜ForbiddenAreaFineChain.js
+ ┃ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┃ ┣ 📜MalfunctionFreeChain.js
+ ┃ ┃ ┃ ┣ 📜OutOfAreaFineChain.js
+ ┃ ┃ ┃ ┣ 📜ParkingDiscountChain.js
+ ┃ ┃ ┃ ┗ 📜TransportChain.js
+ ┃ ┃ ┣ 📜CostChainBase.js
+ ┃ ┃ ┣ 📜CostChainManager.js
+ ┃ ┃ ┗ 📜index.js
  ┣ 📂middlewares
- ┃ ┗ 📜auth.js
- ┃
  ┣ 📂models
- ┃ ┣ 📜account.js
+ ┃ ┣ 📜area.js
+ ┃ ┣ 📜deer.js
+ ┃ ┣ 📜forbiddenArea.js
+ ┃ ┣ 📜history.js
  ┃ ┣ 📜index.js
- ┃ ┣ 📜transaction.js
+ ┃ ┣ 📜parkingZone.js
  ┃ ┗ 📜user.js
- ┃
  ┣ 📂routes
- ┃ ┣ 📜accountRouter.js
  ┃ ┣ 📜globalRouter.js
- ┃ ┣ 📜index.js
- ┃ ┗ 📜userRouter.js
- ┃
+ ┃ ┣ 📜historyRouter.js
+ ┃ ┗ 📜index.js
  ┣ 📂services
- ┃ ┣ 📜accountService.js
- ┃ ┣ 📜transactionService.js
- ┃ ┣ 📜transactionServicePrepared.js
- ┃ ┗ 📜userService.js
+ ┃ ┣ 📜areaService.js
+ ┃ ┣ 📜deerService.js
+ ┃ ┣ 📜historyService.js
+ ┃ ┗ 📜listingService.js
  ┣ 📂test
  ┃ ┣ 📂data
  ┃ ┃ ┗ 📂dto
- ┃ ┃   ┣ 📜postAccount.json
- ┃ ┃   ┣ 📜signup.json
- ┃ ┃   ┗ 📜token.json
+ ┃ ┃ ┃ ┣ 📜postAccount.json
+ ┃ ┃ ┃ ┣ 📜signup.json
+ ┃ ┃ ┃ ┗ 📜token.json
  ┃ ┗ 📂unit
- ┃   ┗ 📂controllers
- ┃     ┣ 📂userController
- ┃     ┃ ┗ 📜postAccount.test.js
- ┃     ┣ 📂userController
- ┃     ┃ ┗ 📜getTransaction.test.js
- ┃     ┃ ┗ 📜postTransaction.test.js
- ┃     ┗ 📂userController
- ┃       ┣ 📜postToken.test.js
- ┃       ┗ 📜postUser.test.js
- ┃
+ ┃ ┃ ┗ 📂controllers
+ ┃ ┃ ┃ ┣ 📂accountController
+ ┃ ┃ ┃ ┃ ┗ 📜postAccount.test.js
+ ┃ ┃ ┃ ┣ 📂transactionController
+ ┃ ┃ ┃ ┃ ┣ 📜getTransaction.test.js
+ ┃ ┃ ┃ ┃ ┗ 📜postTransaction.test.js
+ ┃ ┃ ┃ ┗ 📂userController
+ ┃ ┃ ┃ ┃ ┣ 📜postToken.test.js
+ ┃ ┃ ┃ ┃ ┗ 📜postUser.test.js
  ┣ 📂utils
  ┃ ┣ 📂errors
  ┃ ┃ ┣ 📜commonError.js
- ┃ ┃ ┣ 📜errors.js
- ┃ ┃ ┣ 📜tokenError.js
- ┃ ┃ ┣ 📜transactionError.js
- ┃ ┃ ┗ 📜userError.js
+ ┃ ┃ ┗ 📜errors.js
  ┃ ┣ 📜index.js
  ┃ ┣ 📜logger.js
- ┃ ┗ 📜resFormatter.js
+ ┃ ┣ 📜resFormatter.js
+ ┃ ┗ 📜time.js
  ┣ 📜.env
  ┣ 📜.eslintrc.json
  ┣ 📜.gitignore
  ┣ 📜.prettierrc.json
  ┣ 📜app.js
- ┣ 📜database.db
  ┣ 📜package-lock.json
  ┗ 📜package.json
 
