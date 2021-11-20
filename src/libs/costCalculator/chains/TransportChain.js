@@ -3,6 +3,7 @@ const historyService = require('../../../services/historyService');
 const areaService = require('../../../services/areaService');
 const {getTimeBetween} = require('../../../utils/time');
 const configs = require('../../../configs');
+const logger = require('../../../utils/logger');
 
 // 30분이내 재사용시 기본료면제
 class TransportChain extends CostChainBase {
@@ -11,7 +12,7 @@ class TransportChain extends CostChainBase {
   }
 
   async calculateCost(data) {
-    const previousEndTime = await historyService.getPreviousEndTime(data.userId, data.historyId);
+    const previousEndTime = await historyService.getPreviousEndTime(data.userId, data.startTime);
 
     //이전 사용내역이 없을 경우 바로 넘김
     if(previousEndTime === undefined)

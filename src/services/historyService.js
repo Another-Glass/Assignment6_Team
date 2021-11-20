@@ -29,18 +29,18 @@ exports.readHistory = async historyId => {
  * @param {현재 이용내역 아이디} historyId
  * @return {직전에 사용 종료한 시간}
  */ 
-exports.getPreviousEndTime = async (userId, historyId) => {
+exports.getPreviousEndTime = async (userId, curStartTime) => {
   const query = `
-  SELECT endTime 
+  SELECT id, endTime 
   FROM (SELECT id, endTime FROM histories WHERE userId = :userId) user_only 
-  WHERE id < :historyId ORDER BY endTime DESC LIMIT 1
+  WHERE endTime < :curStartTime ORDER BY endTime DESC LIMIT 1
   `;
 
   try {
     let result = await models.sequelize.query(query, {
       replacements: {
         userId: userId,
-        historyId: historyId
+        curStartTime: curStartTime.toISOString()
       },
       type: models.sequelize.QueryTypes.SELECT,
     });
