@@ -5,8 +5,8 @@ const logger = require('../../../utils/logger');
 
 //지역을 벗어나서 반납하면 거리비례 벌금
 class OutOfAreaFineChain extends  CostChainBase{
-	constructor(nextChain){
-		super(nextChain)
+	constructor(){
+		super()
 	}
 
 	async calculateCost(data) {

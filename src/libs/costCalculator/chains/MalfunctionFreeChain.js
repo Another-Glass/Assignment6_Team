@@ -4,9 +4,8 @@ const {getTimeBetween} = require('../../../utils/time');
 
 // 1분 이내 사용 시 무료
 class MalfunctionFreeChain extends CostChainBase {
-  
-  constructor(nextChain) {
-    super(nextChain);
+  constructor() {
+    super();
   }
 
   async calculateCost(data) {

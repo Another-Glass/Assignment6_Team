@@ -4,8 +4,8 @@ const configs = require('../../../configs');
 
 //금지구역 반납시 6000원 벌금
 class ForbiddenAreaFineChain extends CostChainBase{
-	constructor(nextChain){
-		super(nextChain)
+	constructor(){
+		super()
 	}
 
 	async calculateCost(data) { 

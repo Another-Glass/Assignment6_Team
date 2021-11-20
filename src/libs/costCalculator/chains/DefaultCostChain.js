@@ -5,8 +5,8 @@ const {getTimeBetween} = require('../../../utils/time');
 
 //기본료 + 시간당 기본료
 class DefaultCostChain extends CostChainBase {
-  constructor(nextChain) {
-    super(nextChain);
+  constructor() {
+    super();
   }
 
   async calculateCost(data) {

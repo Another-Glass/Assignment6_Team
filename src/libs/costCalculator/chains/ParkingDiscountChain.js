@@ -5,8 +5,8 @@ const logger = require('../../../utils/logger');
 
 //파킹존 반납시 30퍼센트 할인
 class ParkingDiscountChain extends CostChainBase{
-	constructor(nextChain){
-		super(nextChain)
+	constructor(){
+		super()
 	}
 
 	async calculateCost(data) {    

@@ -6,8 +6,8 @@ const configs = require('../../../configs');
 
 // 30분이내 재사용시 기본료면제
 class TransportChain extends CostChainBase {
-  constructor(nextChain) {
-    super(nextChain);
+  constructor() {
+    super();
   }
 
   async calculateCost(data) {
