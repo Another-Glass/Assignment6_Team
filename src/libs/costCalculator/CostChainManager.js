@@ -3,7 +3,7 @@ const { readHistory } = require("../../services/historyService");
 const logger = require("../../utils/logger");
 
 //체인 전체를 관리하는 매니저 클래스
-class CostCalculator {
+class CostChainManager {
 	constructor(){
 		this._frontChain;
 		this._rearChain;
@@ -51,4 +51,4 @@ class CostCalculator {
 	}
 }
 
-module.exports = CostCalculator;
+module.exports = CostChainManager;

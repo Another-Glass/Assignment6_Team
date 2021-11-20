@@ -1,9 +1,5 @@
 const models = require('../models');
 
-const HISTORY_QUERY = `SELECT id, ST_AsText(endPoint) AS endPoint, ST_AsText(startPoint) AS startPoint, startTime, endTime, deerId, userId FROM histories`;
-const PARKING_ZONE_QUERY = `SELECT id, radius, ST_AsText(centerPoint) AS centerPoint FROM parkingzones`;
-const AREA_QUERY = `SELECT id, ST_AsText(boundary) AS boundary, ST_AsText(center) AS center, priceBase, pricePerMinute FROM areas`;
-const FORBIDDENAREA_QUERY = `SELECT id, ST_AsText(boundary) AS boundary FROM forbiddenAreas`;
 
 // 모든 유저 가져오기
 exports.readUserList = async () => {
@@ -16,6 +12,8 @@ exports.readUserList = async () => {
 
 // 모든 이용내역 가져오기
 exports.readHistoryList = async () => {
+	const HISTORY_QUERY = `SELECT id, ST_AsText(endPoint) AS endPoint, ST_AsText(startPoint) AS startPoint, startTime, endTime, deerId, userId FROM histories`;
+	
 	try {
 		return await models.sequelize.query(HISTORY_QUERY, { type: models.sequelize.QueryTypes.SELECT });
 	} catch (err) {
@@ -34,6 +32,8 @@ exports.readDeerList = async () => {
 
 // 모든 지역 가져오기
 exports.readAreaList = async () => {
+	const AREA_QUERY = `SELECT id, ST_AsText(boundary) AS boundary, ST_AsText(center) AS center, priceBase, pricePerMinute FROM areas`;
+	
 	try {
 		return await models.sequelize.query(AREA_QUERY, { type: models.sequelize.QueryTypes.SELECT });
 	} catch (err) {
@@ -43,6 +43,8 @@ exports.readAreaList = async () => {
 
 // 모든 파킹존 가져오기
 exports.readParkingZoneList = async () => {
+	const PARKING_ZONE_QUERY = `SELECT id, radius, ST_AsText(centerPoint) AS centerPoint FROM parkingzones`;
+	
 	try {
 		return await models.sequelize.query(PARKING_ZONE_QUERY, { type: models.sequelize.QueryTypes.SELECT });
 	} catch (err) {
@@ -52,6 +54,8 @@ exports.readParkingZoneList = async () => {
 
 // 모든 반납금지구역 가져오기
 exports.readForbiddenAreaList = async () => {
+	const FORBIDDENAREA_QUERY = `SELECT id, ST_AsText(boundary) AS boundary FROM forbiddenAreas`;
+	
 	try {
 		return await models.sequelize.query(FORBIDDENAREA_QUERY, { type: models.sequelize.QueryTypes.SELECT });
 	} catch (err) {
