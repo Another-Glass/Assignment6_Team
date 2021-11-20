@@ -16,7 +16,7 @@ class OutOfAreaFineChain extends  CostChainBase{
 		);
 
 		if (!isInAllowedArea.value) {
-			data.finalCost += (isInAllowedArea.distance * configs.cost.finePerMeter);
+			data.finalCost += (isInAllowedArea.distance * configs.cost.FINE_PER_METER);
 		}
 		return await this.goToNextChain(data);
 	}

@@ -12,7 +12,7 @@ class MalfunctionFreeChain extends CostChainBase {
   async calculateCost(data) {
     const rideMilliSec = getTimeBetween(data.startTime, data.endTime);
 
-    if (rideMilliSec <= configs.cost.malfunctionRideTime) {
+    if (rideMilliSec <= configs.cost.MALFUNCTION_RIDE_TIME) {
       return 0;
     }
 

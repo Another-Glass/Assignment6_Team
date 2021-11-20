@@ -1,7 +1,7 @@
 module.exports = {
-  forbiddenAreaFine:6000,
-  finePerMeter:100,
-  parkingZoneDiscountRate:0.3,
-  malfunctionRideTime:60000, //1분
-  transportTime:1800000 //30분
+  FORBIDDEN_AREA_FINE:6000,
+  FINE_PER_METER:100,
+  PARKINGZONE_DISCOUNT_RATE:0.3,
+  MALFUNCTION_RIDE_TIME:60000, //1분
+  TRANSPORT_TIME:1800000 //30분
 }

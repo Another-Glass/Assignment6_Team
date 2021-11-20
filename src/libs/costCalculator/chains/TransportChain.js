@@ -18,7 +18,7 @@ class TransportChain extends CostChainBase {
       return await this.goToNextChain(data);
 
     const durationMilliSec = getTimeBetween(previousEndTime, data.startTime)
-    if (durationMilliSec <= configs.cost.transportTime) {
+    if (durationMilliSec <= configs.cost.TRANSPORT_TIME) {
       const { priceBase } = await areaService.getAreaPrice(data.deerAreaId);
       data.finalCost -= priceBase;
     }

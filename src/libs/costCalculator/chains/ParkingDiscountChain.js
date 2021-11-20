@@ -15,7 +15,7 @@ class ParkingDiscountChain extends CostChainBase{
     );
 
     if (isInParkingZone.value) {
-      data.finalCost -= (data.baseCost * configs.cost.parkingZoneDiscountRate)
+      data.finalCost -= (data.baseCost * configs.cost.PARKINGZONE_DISCOUNT_RATE)
     }       
 
     return await this.goToNextChain(data);
