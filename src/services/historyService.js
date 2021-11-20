@@ -115,7 +115,7 @@ exports.isInAllowedArea = async (areaId,geoJSON)=>{
       toReturn.value = true
     } else {
       toReturn.value = false
-      toReturn.distance = result[0].distance
+      toReturn.distance = Math.floor(result[0].distance)
     }
 
     return toReturn;
