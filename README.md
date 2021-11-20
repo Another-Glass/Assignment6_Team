@@ -158,6 +158,30 @@
 - 확인 시의 편의를 위해 DB 테이블마다 전체조회를 할 수 있는 API를 추가했습니다.
 - 또한 DB상의 공간정보를 시각화한 스프레드시트를 아래와 같이 제작했습니다.
 - [DB 공간정보 목록](https://docs.google.com/spreadsheets/d/1w8VWcGIeXK5w-PNMLeMdp_M20VEIdTnv0e335UgKhbo/edit#gid=0)
+- 아래는 테스트에 사용한 이용내역에 대한 설명입니다.
+  
+  <details><summary>[테스트 데이터 사용내역]</summary>
+  [id] - [지역(기본요금/시간요금)],[사용시간],[기타],[예상요금] 
+
+  1번 - 2번지역(400/80), 25분, 그외없음, expect 2400
+
+  2번 - 2번지역(400/80), 20분, 그외없음, expect 2000
+
+  4번 - 2번지역(400/80), 30초, 1분이내무료, expect 0
+
+  5번 - 2번지역(400/80), 10분, 6번 환승적용을 위한 용도, expect 1200
+
+  6번 - 2번지역(400/80), 35분, 30분이내환승용도, expect 2800
+
+  8번 - 2번지역(400/80), 10분, 9번 환승적용을 위한용도, expect 1200
+
+  9번 - 2번지역(400/80), 35분, 환승, 지역이탈(92005m),금지구역, expect 9209300
+
+  10번 - 4번지역(630/100), 10분, 지역이탈(97817m),주차구역, expect 9782841
+
+  11번 - 4번지역(630/100),15분,주차구역, expect 1491
+
+  </details>  
 
 <br>
 
@@ -264,8 +288,8 @@
 
 - Postman을 활용하여 API 작동 테스트를 진행했습니다. 
 - __배포된 서버 주소__ 및 자세한 API 명세는 아래에서 확인 가능합니다.
-- [🗂 API Description Link](https://documenter.getpostman.com/view/18068137/UVC8C5cm)
-- [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/18068137/UVC8C5cm) 을 클릭하여 웹브라우저 혹은 Postman 클라이언트에 콜렉션이 로드되면
+- [🗂 API Description Link](https://documenter.getpostman.com/view/18068137/UVJWpzT4)
+- [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/18068137/UVJWpzT4) 을 클릭하여 웹브라우저 혹은 Postman 클라이언트에 콜렉션이 로드되면
    1. Variables 탭에서 서버 Host와 Port를 지정합니다. (기본값이 지정되어 있습니다.)
    2. 그후 우측 상단의 Run 버튼을 눌러 RUN ORDER 화면에 진입한 뒤 Run \[Collection Name\]을 클릭하면, 이상적인 상황에서의 테스트가 진행됩니다.
        
