@@ -12,6 +12,7 @@ exports.getOwningArea = async deerId => {
       attributes:['areaId'],
       raw:true,
     });
+    
     return deerAreaId.areaId;
   } catch (err) {
     throw err;

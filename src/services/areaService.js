@@ -9,6 +9,7 @@ exports.getAreaPrice = async areaId => {
         id: areaId,
       },
       attributes: ['id', 'priceBase', 'pricePerMinute'],
+      raw:true,
     });
     return areaPrice;
   } catch (err) {

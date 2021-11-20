@@ -24,7 +24,7 @@ if (IS_SQLLITE) {
       host: configs.db.dbHOSTNAME,
       port: configs.db.dbPORT,
       dialect: 'mysql',
-      logging: true,
+      logging: false,
     },
   );
 }
