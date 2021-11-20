@@ -149,13 +149,13 @@
 
 ### [ 요금계산 API ]
 
-- 결제요금을 계산해주는 라이브러리로부터 정산받아 결과를 조회하는 API를 구현했습니다.
+- 결제요금을 계산해주는 라이브러리를 독립적으로 만들고, 이를 사용하여 최종요금을 조회하는 API를 구현했습니다.
 
 <br>
 
 ### [ DB 조회 API, 공간정보 시각화 ]
 
-- 기업에서 확인 시, 편의를 위해 DB 테이블마다 전체조회를 할 수 있는 API를 추가했습니다.
+- 확인 시의 편의를 위해 DB 테이블마다 전체조회를 할 수 있는 API를 추가했습니다.
 - 또한 DB상의 공간정보를 시각화한 스프레드시트를 아래와 같이 제작했습니다.
 - [DB 공간정보 목록](https://docs.google.com/spreadsheets/d/1w8VWcGIeXK5w-PNMLeMdp_M20VEIdTnv0e335UgKhbo/edit#gid=0)
 
@@ -166,14 +166,60 @@
 - 자바스크립트 자체 내장 Error 클래스를 상속 받아서, 커스텀 에러를 생성해서 관리했습니다.
 
 <br>
+<br>
 
-### [ 확장성을 위한 고려 ]
+## 📕 확장성을 위한 고려 
 
-- 책임연쇄패턴 방식으로 요금을 계산하는 라이브러리를 만들어 조건의 결합도를 낮추었습니다. 낮은 결합도는 이후 할인과 벌금 조건을 쉽게 추가, 삭제 할 수 있습니다.
+</br>
 
+- 과제분석을 통해 요금조건이 다양하고, 추가와 제거의 가능성이 많으며 조건의, 적용순서도 변경될 여지가 많다는 특징을 확인했습니다. 
+- 고민을 거쳐 해당 특징들에 적합한 책임연쇄패턴을 적용하기로 했습니다.
+  
+  <br>
+  
+  <img src="https://user-images.githubusercontent.com/38933716/142721613-771f811a-befb-4c40-a101-c6e687bcaf10.png" height=500>
+
+  *src/libs/costCalculator/ 폴더 내의 클래스 다이어그램*
+  
+
+1. CostChainBase는 Chain을 추상화한 인터페이스의 용도로 만들었습니다. 다만, 자바스크립트는 Duck Typing으로인해 인터페이스 개념이 존재하지 않으므로 어쩔 수 없이 클래스 상속을 이용했습니다.
+   
+2. ConcreteChain클래스들은 CostChainBase를 상속하여 구체화된 클래스들입니다. calculateCost 메소드를 통해 각자의 요금조건을 계산하고 goToNextChain을 통해 다음 체인으로 넘깁니다.
+   
+3. CostChainManager는 체인연결, 데이터 전처리 등 종합적으로 체인을 관리하는 클래스입니다. addChain으로 체인을 추가하고 최종적으로는 이 클래스의 calculateCost 메소드를 호출하여 요금을 계산합니다.
+   
+   <br>
+
+    <img src="https://user-images.githubusercontent.com/38933716/142721905-5e744b7f-09ac-4f5c-96af-d8ea644d7990.png" height=400>
+   
+    *CostChainBase 실제 코드*
+
+    <img src="https://user-images.githubusercontent.com/38933716/142722006-968725a4-8439-4935-a1b3-11044168ac79.png" height=500>
+   
+    *CostChainManager 실제 코드*
 
 <br>
+
+- 추가적으로 다른 부분과의 의존성을 낮추기 위해, node.js의 index.js파일 모듈 기능을 이용해 독립적인 폴더로 구분하기로 했습니다.
+    <img src="https://user-images.githubusercontent.com/38933716/142722113-e5bd9325-3f10-47a5-938a-c681c8d70238.png" height=400>
+
+    */src/libs/costCalculator/index.js 파일의 내용*
+
+    ```
+    const costCalculator = require('../libs/costChains');
+    let finalCost = await costCalculator.calculateCost(historyId);
+    ```
+    *실제 사용 예*
+
 <br>
+
+- 위와 같은 설계를 통해 요금조건의 추가, 삭제, 순서변경 등의 변화에 있어서 기존코드의 변경을 최소화 할 수 있었습니다.
+- SOLID원칙들 중 기능의 확장에는 열려있고 기존 코드의 변경에는 닫혀있는 Open-Closed 원칙을 만족할 수 있었습니다. SOLID의 일부 다른 원칙 또한 만족하는 것으로 보입니다.
+
+
+
+</br>
+</br>
 
 ## ➕ 협업을 위한 노력
 
