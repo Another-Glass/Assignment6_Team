@@ -218,6 +218,7 @@
    
     *(인터페이스 용도) CostChainBase 실제 코드*
 
+    <br>
     <img src="https://user-images.githubusercontent.com/38933716/142722006-968725a4-8439-4935-a1b3-11044168ac79.png" height=500>
    
     *CostChainManager 실제 코드*
@@ -229,6 +230,8 @@
 
     */src/libs/costCalculator/index.js 파일의 내용*
 
+    <br>
+    
     ```
     const costCalculator = require('../libs/costChains');
     let finalCost = await costCalculator.calculateCost(historyId);
