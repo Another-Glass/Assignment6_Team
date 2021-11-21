@@ -214,9 +214,9 @@
    
    <br>
 
-    <img src="https://user-images.githubusercontent.com/38933716/142721905-5e744b7f-09ac-4f5c-96af-d8ea644d7990.png" height=400>
+    <img src="https://user-images.githubusercontent.com/38933716/142758015-c35a3f29-0797-4b86-9721-7c82e6c9f655.png" height=450>
    
-    *CostChainBase 실제 코드*
+    *(인터페이스 용도) CostChainBase 실제 코드*
 
     <img src="https://user-images.githubusercontent.com/38933716/142722006-968725a4-8439-4935-a1b3-11044168ac79.png" height=500>
    
